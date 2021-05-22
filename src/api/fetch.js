@@ -39,10 +39,18 @@ export const Board = (target) => {
     }
     const fields = ['id', 'text'];
     return (
-        <div>
-            <h6>{loading ? 'loading' : 'idle'}</h6>
-            <button onClick={()=>{fetch()}}>load</button>
-        <CCol xs="12" lg="6">
+        <>
+        <CRow>
+        <CCol xs="12" lg="12">
+            <CCard color="danger" className="text-white text-center">
+                <CCardBody>
+                <h6>{loading ? 'loading' : 'idle'}</h6>
+                <button onClick={()=>{fetch()}}>load</button>
+                </CCardBody>
+            </CCard>
+
+        </CCol>
+        <CCol xs="12" lg="12">
           <CCard>
             <CCardHeader>
               board
@@ -57,6 +65,10 @@ export const Board = (target) => {
             </CCardBody>
           </CCard>
         </CCol>
-        </div>
+        </CRow>
+            
+
+        
+        </>
     )
 }
