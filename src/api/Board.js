@@ -27,7 +27,6 @@ const Board = ({target}) => {
     const boardData = useSelector(state => state.curBoardData);
     
     const fetch = () => {
-        console.log('fetch')
         dispatch({type: 'set_loading', isLoading: true});
         fetchData(target)
         .then((data)=>{ 
@@ -42,13 +41,12 @@ const Board = ({target}) => {
         });
     }
 
-    const write = () => {
+    const write = async () => {
         dispatch({type: 'set_loading', isLoading: true});
-        writeData({board: target, data: {name: nameRef.current.value, text: textRef.current.value}})
+        await writeData({board: target, data: {name: nameRef.current.value, text: textRef.current.value}})
         .then(()=>{
             dispatch({type: 'set_loading', isLoading: false});
             dispatch({type: 'set_lastAccessSucceed', isLastAccessSucceed: true});
-            
         })
         .catch((err)=>{
             console.log('this is error');
@@ -56,7 +54,7 @@ const Board = ({target}) => {
             dispatch({type: 'set_loading', isLoading: false});
             dispatch({type: 'set_lastAccessSucceed', isLastAccessSucceed: false});
         });
-        fetch();
+        
     }
     
     const nameRef = useRef(null);
@@ -91,7 +89,7 @@ const Board = ({target}) => {
                   </CFormGroup>
                   <h6>{loading ? 'loading' : 'idle'}</h6>
                   <button onClick={()=>{fetch()}}>load</button>
-                  <button onClick={()=>{write()}}>submit</button>
+                  <button onClick={()=>{write().then(()=>{fetch()})}}>submit</button>
                 </CCardBody>
             </CCard>
 
