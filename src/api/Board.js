@@ -69,15 +69,18 @@ const Board = ({target}) => {
     }
 
     const deletion = async (index, password) => {
+      
       dispatch({type: 'set_loading', isLoading: true})
       await deleteData({board: target, index, password})
         .then((result) => {
+          
           dispatch({ type: 'set_loading', isLoading: false });
           dispatch({ type: 'set_lastAccessSucceed', isLastAccessSucceed: true });
           if(!result){
             setDeletionSucceed(false);
           }else{
             setDeletionSucceed(true);
+            deletionModalToggle();
           }
         })
         .catch((err) => {
@@ -87,6 +90,7 @@ const Board = ({target}) => {
           dispatch({ type: 'set_lastAccessSucceed', isLastAccessSucceed: false });
         });
       fetch();
+      //fetch를 다시해야하는데 다시하면 밑에서 text를 찾을 수 없다고 뜸.
     }
     
     const handleSubmit = () => {
@@ -103,8 +107,13 @@ const Board = ({target}) => {
     }
 
     const handleDeletion = (index) => {
-      
-    } 
+      deletionModalToggle();
+      setSelIndex(index);
+    }
+    const deleteSequence = ()=>{
+      deletion(selIndex,pwCheckRef.current.value);
+    }
+
     
     const nameRef = useRef(null);
     const passwordRef = useRef(null);
@@ -146,9 +155,10 @@ const Board = ({target}) => {
       setModal(!modal);
     }
 
-    //deletionModal on off function
+    //deletionModal
     const [deletionModal, setDeletionModal] = useState(false);
     const [deletionSucceed, setDeletionSucceed] = useState(true);
+    const [selIndex, setSelIndex] = useState(-1);
     const deletionModalToggle = () => {
       setDeletionModal(!deletionModal);
     }
@@ -171,18 +181,18 @@ const Board = ({target}) => {
           </CModalFooter>
         </CModal>
 
-        {/* Deletion Modal */}
+        {/* deletionModal */}
         <CModal
           show={deletionModal}
         >
           <CModalHeader closeButton>Delete</CModalHeader>
           <CModalBody>
-          <CInput type={`password`} id="text-input" name="text-input" placeholder="Enter password" innerRef={pwCheckRef}/>
-        </CModalBody>
+            <CInput id="text-input" name="text-input" placeholder="Enter password" innerRef={pwCheckRef} />
+          </CModalBody>
           <CModalFooter>
             <CButton
               color="danger"
-              onClick={deletionModalToggle}
+              onClick={() => { deleteSequence();}}
             >Delete</CButton>
           </CModalFooter>
         </CModal>
@@ -281,7 +291,8 @@ const Board = ({target}) => {
                         <h6>
                           {boardData[index].text}
                         </h6>
-                        <CButton size="sm" color="danger" className="ml-1">
+
+                        <CButton size="sm" color="danger" className="ml-1" onClick={()=>{handleDeletion(item.id)}}>
                           Delete
                         </CButton>
                       </CCardBody>

@@ -47,13 +47,15 @@ export const writeData = async ({board,data})=>{
 
 export const deleteData = async ({board, index, password})=>{
   let rlpw;
-  await db.collection(board).doc(index).get().then((doc)=>{
+  await db.collection(board).doc(`${index}`).get().then((doc)=>{
     rlpw = doc.data().password;
   })
   if(rlpw == password){
     await db.collection(board).doc(`${index}`).delete()
+    console.log('success');
     return true;
   }else {
+    console.log('failed');
     return false;
   }
 }
