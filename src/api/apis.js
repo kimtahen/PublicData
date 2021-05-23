@@ -20,6 +20,7 @@ export const fetchData = async (board)=>{
         let rlData = doc.data();
         boardData.push({...rlData, time : getToday(rlData.time.seconds)});
       })
+      boardData = boardData.reverse();
       return boardData;
 }
 
