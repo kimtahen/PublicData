@@ -27,14 +27,33 @@ export const fetchData = async (board)=>{
 export const writeData = async ({board,data})=>{
 
     let nextId;
-    await db.collection(board).get().then((snap)=>{
-      nextId = snap.size;
+    await db.collection('common').doc(board).get().then((doc)=>{
+      
+      nextId = parseInt(doc.data().volume);
     })
+   
 
+    await db.collection('common').doc(board)
+    .set({
+      volume: nextId+1
+    })
     await db.collection(board).doc(`${nextId}`)
     .set({
       ...data,
       id: nextId,
       time: firebase.firestore.Timestamp.fromDate(new Date()),
     })
+}
+
+export const deleteData = async ({board, index, password})=>{
+  let rlpw;
+  await db.collection(board).doc(index).get().then((doc)=>{
+    rlpw = doc.data().password;
+  })
+  if(rlpw == password){
+    await db.collection(board).doc(`${index}`).delete()
+    return true;
+  }else {
+    return false;
+  }
 }
