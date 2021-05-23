@@ -39,6 +39,7 @@ const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
 
 const Test = React.lazy(()=>import('./views/test/Test'));
+const Videos = React.lazy(()=>import('./views/test/Videos'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -81,7 +82,9 @@ const routes = [
   { path: '/widgets', name: 'Widgets', component: Widgets },
   { path: '/users', exact: true,  name: 'Users', component: Users },
   { path: '/users/:id', exact: true, name: 'User Details', component: User },
-  { path: '/test', exact: true, name: 'TestPage', component: Test}
+
+  { path: '/test', exact: true, name: 'TestPage', component: Test},
+  { path: '/test/', name: 'Videos', component: Videos}
 ];
 
 export default routes;
