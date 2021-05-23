@@ -12,12 +12,16 @@ import {
     CLabel,
     CInput,
     CButton,
-    CCollapse
+    CCollapse,
+    CForm,
+    CFormText,
+    CCardFooter,
   } from '@coreui/react'
 
 import {useSelector, useDispatch} from 'react-redux'
 
 import {fetchData, writeData} from './apis'
+import CIcon from '@coreui/icons-react';
 
 const Board = ({target}) => {
     useEffect(()=>{
@@ -60,6 +64,10 @@ const Board = ({target}) => {
         
     }
     
+    const handleSubmit = () => {
+
+    }
+    
     const nameRef = useRef(null);
     const passwordRef = useRef(null);
     const titleRef = useRef(null);
@@ -96,29 +104,78 @@ const Board = ({target}) => {
         <>
         <CRow>
         <CCol xs="12" lg="3">
-            <CCard color="danger" className="text-white text-center">
-                <CCardBody>
+            <CCard color="info" className="text-white text-center">
+            <CCardBody>
+              <CForm action="" method="" className="form-horizontal" >
+                <CFormGroup row>
+                  <CCol md="3">
+                    <CLabel htmlFor="text-input">Name</CLabel>
+                  </CCol>
+                  <CCol xs="12" md="9">
+                    <CInput id="text-input" name="text-input" placeholder="Enter name..." innerRef={nameRef}/>
+                    <CFormText className="help-block">Please enter your name</CFormText>
+                  </CCol>
+                </CFormGroup>
+                <CFormGroup row>
+                  <CCol md="3">
+                    <CLabel htmlFor="hf-password">Password</CLabel>
+                  </CCol>
+                  <CCol xs="12" md="9">
+                    <CInput type="password" id="hf-password" name="hf-password" placeholder="Enter Password..." innerRef={passwordRef}/>
+                    <CFormText className="help-block">Please enter your password</CFormText>
+                  </CCol>
+                </CFormGroup>
+                <CFormGroup row>
+                  <CCol md="3">
+                    <CLabel htmlFor="text-input">title</CLabel>
+                  </CCol>
+                  <CCol xs="12" md="9">
+                    <CInput id="text-input" name="text-input" placeholder="Enter name..." innerRef={titleRef}/>
+                    <CFormText className="help-block"></CFormText>
+                  </CCol>
+                </CFormGroup>
+                <CFormGroup row>
+                  <CCol md="3">
+                    <CLabel htmlFor="text-input">Comment</CLabel>
+                  </CCol>
+                  <CCol xs="12" md="9">
+                      <CTextarea 
+                      name="textarea-input" 
+                      id="textarea-input" 
+                      rows="9"
+                      placeholder="Content..." 
+                      innerRef={textRef}
+                      required/>
+                    </CCol>
+                </CFormGroup>
+              </CForm>
+            </CCardBody>
+            <CCardFooter>
+              <CButton type="submit" onClick={()=>{}} size="sm" color="info"><CIcon name="cil-scrubber" /> Submit</CButton>
+            </CCardFooter>
+
+                {/* <CCardBody>
                   <CFormGroup row>
                     <CCol md="3">
-                      <CLabel htmlFor="text-input">Name</CLabel>
+                      <CLabel htmlFor="text-input" required>Name</CLabel>
                     </CCol>
                     <CCol xs="12" md="9">
                       <CInput id="text-input" name="text-input" placeholder="Name" innerRef={nameRef} />
                     </CCol>
                     <CCol md="3">
-                      <CLabel htmlFor="text-input">Password</CLabel>
+                      <CLabel htmlFor="text-input" required>Password</CLabel>
                     </CCol>
                     <CCol xs="12" md="9">
                       <CInput id="text-input" name="text-input" placeholder="Password" innerRef={passwordRef} />
                     </CCol>
                     <CCol md="3">
-                      <CLabel htmlFor="text-input">Title</CLabel>
+                      <CLabel htmlFor="text-input" required>Title</CLabel>
                     </CCol>
                     <CCol xs="12" md="9">
                       <CInput id="text-input" name="text-input" placeholder="Title" innerRef={titleRef} />
                     </CCol>
                     <CCol md="3">
-                      <CLabel htmlFor="textarea-input">Comment</CLabel>
+                      <CLabel htmlFor="textarea-input" required>Comment</CLabel>
                     </CCol>
                     <CCol xs="12" md="9">
                       <CTextarea 
@@ -127,13 +184,13 @@ const Board = ({target}) => {
                       rows="9"
                       placeholder="Content..." 
                       innerRef={textRef}
-                      />
+                       required/>
                     </CCol>
                   </CFormGroup>
                   <h6>{loading ? 'loading' : 'idle'}</h6>
                   <button onClick={()=>{fetch()}}>load</button>
-                  <button onClick={()=>{write().then(()=>{})}}>submit</button>
-                </CCardBody>
+                  <button onClick={()=>{write()}}>submit</button>
+                </CCardBody> */}
             </CCard>
 
         </CCol>
