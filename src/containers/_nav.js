@@ -24,6 +24,257 @@ const _nav =  [
   },
   {
     _tag: 'CSidebarNavTitle',
+    _children: ['훈련장 게시판']
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '서울특별시',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '서초과학화예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '부산광역시',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '부산 해운대구 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '부산 부산진구 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '대구광역시',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '대구 동구 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '대구 북구 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '인천광역시',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '인천 미추홀구 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '인천 서구 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '광주광역시',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '광주 광산구 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '광주 북구 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '대전광역시',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '대전 유성구 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '대전 대덕구 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '울산광역시',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '울산 북구 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '울산 울주군 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '세종특별자치시',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '세종시 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '경기도',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '일산 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '김포 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '호계 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '강원도',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '만종 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '강릉시 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '충청도',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '양수리 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '논산/계룡 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '전라도',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '군산 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '광양 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '경상도',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '경산 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '포항 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '제두도',
+    route: '/buttons',
+    icon: 'cil-cursor',
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '제주시 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      },
+      {
+        _tag: 'CSidebarNavItem',
+        name: '서귀포 예비군훈련장',
+        to: '/buttons/brand-buttons',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavTitle',
     _children: ['Theme']
   },
   {
