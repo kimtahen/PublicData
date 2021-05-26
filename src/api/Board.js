@@ -289,7 +289,7 @@ const Board = ({target}) => {
                     <CCollapse show={details.includes(index)}>
                       <CCardBody>
                         <h6>
-                          {boardData[index].text}
+							{boardData[index]? boardData[index].text : ""}
                         </h6>
 
                         <CButton size="sm" color="danger" className="ml-1" onClick={()=>{handleDeletion(item.id)}}>
