@@ -23,3 +23,4 @@ name prop은 실제 화면에 뜨는 이름임. 드랍다운의 route는 왜필�
 3. 충현의 views/camps/Seocho.js 와 views/test/Board.js 에 api/Board 모듈을 사용해 놓은 예시를 볼 수 있습니다.
 4. 기본적인 사용법은 <Board target={`board1`}/> 이 코드를 추가해주고 target에 firebase의 보드 이름을 넣어주면 됩니다.
 5. firebase의 firestore 데이터베이스에는 board1이랑 board2 밖에 추가를 안해두었습니다. 말해주면 더 만들어 놓겠습니다.
+6. 게시판 board1 ~ board20까지 만들어놨습니다. 카테고리마다 하나씩 쓰면됩니다.
