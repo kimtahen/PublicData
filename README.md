@@ -1,3 +1,11 @@
+!기본적인 Core UI 사용법!
+1. src/containers/nav.js에서 왼쪽 sidebar의 layout을 testcode처럼 만들어줌.
+name prop은 실제 화면에 뜨는 이름임. 드랍다운의 route는 왜필요한진모르겟음.
+근데 children의(CSidebarNavItem)의 to는 실제로 url을 거기로 가게 만들어주는 역할임. 실제로 거기에 연결했을때 뭐가있든없든.
+근데 머 없으면 기본인 dashboard로 가게 되어있긴 함.
+
+2. 그다음엔 routes.js 만 바꿔주면 끝임.
+
 21.05.22. 회의록
 1. 홈 화면에는 예비군에 대한 전반적인 설명? 예비군 홈페이지 참고해서 만들기 -> 세혁
 2. 사이드바에 지역별로 나눠서 드랍다운 만들고 그 안에 훈련장 채우고 그 훈련장 버튼 누르면 어떤 비어있는 페이지로라도 가게 만드는 거 만들기(전국 대략 20개정도 훈련장) -> 충현
@@ -9,11 +17,9 @@
   4-2. 그거 써서 테이블이랑 글쓰는기능 구현하기 -> 태현
   4-3. 예쁘게? -> 명원
   
-1. src/containers/_nav.js에서 왼쪽 sidebar의 layout을 testcode처럼 만들어줌.
-name prop은 실제 화면에 뜨는 이름임. 드랍다운의 route는 왜필요한진모르겟음.
-근데 children의(CSidebarNavItem)의 to는 실제로 url을 거기로 가게 만들어주는 역할임. 실제로 거기에 연결했을때 뭐가있든없든.
-근데 머 없으면 기본인 dashboard로 가게 되어있긴 함.
-
-2. 그다음엔 routes.js 만 바꿔주면 끝임.
-
-
+21.05.26. 수정사항(태현)
+1. 게시판 완성하였습니다. import해서 firebase의 데이터베이스 이름만 넣어주면 자동으로 사용할 수 있도록 만들어 두었습니다.
+2. 서초구훈련장 페이지 가면 적용된 걸 볼 수 있습니다.
+3. 충현의 views/camps/Seocho.js 와 views/test/Board.js 에 api/Board 모듈을 사용해 놓은 예시를 볼 수 있습니다.
+4. 기본적인 사용법은 <Board target={`board1`}/> 이 코드를 추가해주고 target에 firebase의 보드 이름을 넣어주면 됩니다.
+5. firebase의 firestore 데이터베이스에는 board1이랑 board2 밖에 추가를 안해두었습니다. 말해주면 더 만들어 놓겠습니다.
