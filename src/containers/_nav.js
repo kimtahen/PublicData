@@ -35,7 +35,7 @@ const _nav =  [
       {
         _tag: 'CSidebarNavItem',
         name: '서초과학화예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Seocho',
       }
     ],
   },
