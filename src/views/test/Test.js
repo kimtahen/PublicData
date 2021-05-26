@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
-import {fetchData, Board} from '../../api/fetch'
+import Board from '../../api/Board';
 import {useSelector, useDispatch} from 'react-redux'
 
 const Test = () => {
     return(
         <div>
-            <Board/>
+            <Board target={`board1`}/>
         </div>
     )
 }

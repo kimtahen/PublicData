@@ -3,6 +3,7 @@ import { createStore } from 'redux'
 const initialState = {
   sidebarShow: 'responsive',
   isLoading: false,
+  isLastAccessSucceed: true,
 }
 
 const changeState = (state = initialState, { type, ...rest }) => {
@@ -12,6 +13,8 @@ const changeState = (state = initialState, { type, ...rest }) => {
     case 'set_loading':
       return {...state, ...rest}
     case 'set_boardData':
+      return {...state, ...rest}
+    case 'set_lastAccessSucceed':
       return {...state, ...rest}
     default:
       return state
