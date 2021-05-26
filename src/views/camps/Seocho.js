@@ -12,6 +12,7 @@ import {
   CEmbedItem
 } from '@coreui/react'
 import { DocsLink } from 'src/reusable'
+import Board from '../../api/Board'
 
 const Seocho = () => {
   const placements = [
@@ -82,7 +83,7 @@ const Seocho = () => {
           </p> */}
         </CCardBody>
       </CCard>
-
+	<Board target={`board2`}/>
 
     </>
   )
