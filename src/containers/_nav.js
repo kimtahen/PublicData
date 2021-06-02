@@ -23,13 +23,23 @@ const _nav =  [
     }
   },
   {
+    _tag: 'CSidebarNavItem',
+    name: 'Testboard',
+    to: '/testboard',
+    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
+    badge: {
+      color: 'info',
+      text: 'NEW',
+    }
+  },
+  {
     _tag: 'CSidebarNavTitle',
     _children: ['훈련장 게시판']
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: '서울특별시',
-    route: '/buttons',
+    route: '/camps',
     icon: 'cil-cursor',
     _children: [
       {
@@ -42,18 +52,18 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: '부산광역시',
-    route: '/buttons',
+    route: '/camps',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '부산 해운대구 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Haeundae',
       },
       {
         _tag: 'CSidebarNavItem',
         name: '부산 부산진구 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Jin',
       }
     ],
   },
@@ -103,11 +113,6 @@ const _nav =  [
         _tag: 'CSidebarNavItem',
         name: '광주 광산구 예비군훈련장',
         to: '/buttons/brand-buttons',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: '광주 북구 예비군훈련장',
-        to: '/buttons/brand-buttons',
       }
     ],
   },
@@ -135,11 +140,6 @@ const _nav =  [
     route: '/buttons',
     icon: 'cil-cursor',
     _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: '울산 북구 예비군훈련장',
-        to: '/buttons/brand-buttons',
-      },
       {
         _tag: 'CSidebarNavItem',
         name: '울산 울주군 예비군훈련장',
