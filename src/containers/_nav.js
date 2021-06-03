@@ -39,7 +39,8 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: '서울특별시',
-    route: '/camps',
+    route: '/Seoul',
+    //route names should be different, as to avoid leaving multiple dropdowns open at the same time
     icon: 'cil-cursor',
     _children: [
       {
@@ -52,7 +53,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: '부산광역시',
-    route: '/camps',
+    route: '/Busan',
     icon: 'cil-cursor',
     _children: [
       {
@@ -70,7 +71,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: '대구광역시',
-    route: '/buttons',
+    route: '/Daeugu',
     icon: 'cil-cursor',
     _children: [
       {

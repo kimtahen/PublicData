@@ -1,57 +1,75 @@
 import React from 'react'
 import {
-  CButton,
   CCard,
   CCardBody,
   CCardHeader,
-  CTooltip,
   CRow,
   CCol,
-  CLink,
   CEmbed,
-  CEmbedItem
+  CEmbedItem,
+  CImg
 } from '@coreui/react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 
 const Haeundae = () => {
-  const placements = [
-    'top-start', 'top', 'top-end',
-    'bottom-start', 'bottom', 'bottom-end',
-    'right-start', 'right', 'right-end',
-    'left-start', 'left', 'left-end'
-  ]
 
   return (
     <>
-      <CRow>
-        <CCol>
-          <CCard>
-            <CCardHeader>
+			<CRow>
+				<CCol>
+					<CCard>
+        	  <CCardHeader>
+           		 부산해운대예비군훈련장
+            </CCardHeader>
+						<CCardBody>
+	            <CImg
+	              // src="https://council.busanjin.go.kr/UPDIR/photo/middle/photo_00001370.jpg"
+      					// fluid
+      					// className="mb-2"
+							/>
+						</CCardBody>
+					</CCard>
+				</CCol>
+			</CRow>
+
+			<CRow>
+				<CCol>
+					<CCard>
+        	  <CCardHeader>
               부산해운대예비군훈련장
             </CCardHeader>
-            <CCardBody>
-              <CEmbed>
-                {/* <CEmbedItem iframe width="560" height="315" src="https://www.youtube.com/embed/B9a3iUhsxJM"/> */}
-              </CEmbed>
-            </CCardBody>
-          </CCard>
-        </CCol>
-      </CRow>
+						<CCardBody>
+	            <CImg
+	              // src="https://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=b385be40-cabc-11da-bc12-000001010d15&fileSn=20120615085939"
+      					// fluid
+      					// className="mb-2"
+							/>
+						</CCardBody>
+					</CCard>
+				</CCol>
+			</CRow>
 
-      <CCard>
-        <CCardHeader>
-          정보
-          <DocsLink name="CCard"/>
-        </CCardHeader>
-        <CCardBody>
-          <p className="muted">
-            02-576-6637
-          </p>
+			<CRow>
+				<CCol>
+					<CCard>
+      	    <CCardHeader>
+	    	      정보
+    		      <DocsLink name="CCard"/>
+  	        </CCardHeader>
+						<CCardBody>
+	    	      <p className="muted">
+              주소 : 부산광역시 해운대구 백동길(송정동) 43
+  	      	  </p>
+	    	      <p className="muted">
+        	    연락처 : 051-704-1113
+  	      	  </p>
+						</CCardBody>
+					</CCard>
+				</CCol>
+			</CRow>
 
-        </CCardBody>
-      </CCard>
-	<Board target={`board3`}/>
+			<Board target={`board3`}/>
 
     </>
   )

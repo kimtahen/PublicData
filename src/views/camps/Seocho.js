@@ -4,86 +4,71 @@ import {
   CCard,
   CCardBody,
   CCardHeader,
-  CTooltip,
   CRow,
   CCol,
-  CLink,
   CEmbed,
-  CEmbedItem
+  CEmbedItem,
+	CImg
 } from '@coreui/react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 
 const Seocho = () => {
-  const placements = [
-    'top-start', 'top', 'top-end',
-    'bottom-start', 'bottom', 'bottom-end',
-    'right-start', 'right', 'right-end',
-    'left-start', 'left', 'left-end'
-  ]
 
   return (
     <>
-      <CRow>
-        <CCol>
-          <CCard>
-            <CCardHeader>
-              서초과학화예비군훈련장
+ 			<CRow>
+				<CCol>
+					<CCard>
+        	  <CCardHeader>
+            	서초과학화예비군훈련장
             </CCardHeader>
-            <CCardBody>
-              <CEmbed>
+						<CCardBody>
+            	<CEmbed>
                 <CEmbedItem iframe width="560" height="315" src="https://www.youtube.com/embed/B9a3iUhsxJM"/>
               </CEmbed>
             </CCardBody>
-          </CCard>
-        </CCol>
-      </CRow>
+					</CCard>
+				</CCol>
+			</CRow>
 
-      <CCard>
-        <CCardHeader>
-          정보
-          <DocsLink name="CCard"/>
-        </CCardHeader>
-        <CCardBody>
-          {/*eslint-disable-next-line*/}
+			{/* <CRow>
+				<CCol>
+					<CCard>
+        	  <CCardHeader>
+	            서초과학화예비군훈련장
+            </CCardHeader>
+						<CCardBody>
+	            <CImg
+	              src="https://www.yebigun1.mil.kr/dmobis/NaverMap4.jsp"
+      					fluid
+      					className="mb-2"
+							/>
+						</CCardBody>
+					</CCard>
+				</CCol>
+			</CRow> */}
 
-          {/* <p className="text-muted">
-            Hover over the links below to see tooltips:
-          </p> */}
+			<CRow>
+				<CCol>
+					<CCard>
+      	    <CCardHeader>
+	    	      정보
+    		      <DocsLink name="CCard"/>
+  	        </CCardHeader>
+						<CCardBody>
+	    	      <p className="muted">
+              주소 : 서울특별시 서초구 신흥말길(내곡동) 79-39 서초과학화예비군훈련장(강남, 서초)
+  	      	  </p>
+	    	      <p className="muted">
+        	    연락처 : 02-576-6637
+  	      	  </p>
+						</CCardBody>
+					</CCard>
+				</CCol>
+			</CRow>
 
-          <p className="muted">
-            02-576-6637
-          </p>
-
-          {/* <p className="muted">
-            Tight pants next level keffiyeh
-            <CTooltip content="Tooltip text">
-              <CLink> you probably </CLink>
-            </CTooltip>
-              haven't heard of them.
-            Photo booth beard raw denim letterpress vegan messenger
-            bag stumptown. Farm-to-table seitan, mcsweeney's fixie
-            sustainable quinoa 8-bit american apparel
-            <CTooltip content="Tooltip text">
-              <CLink> have a </CLink>
-            </CTooltip>
-            terry richardson vinyl chambray. Beard stumptown,
-            cardigans banh mi lomo thundercats. Tofu biodiesel
-            williamsburg marfa, four loko mcsweeney''s cleanse
-            vegan chambray. A really ironic artisan
-            <CTooltip content="Tooltip text">
-              <CLink> whatever keytar </CLink>
-            </CTooltip>
-            scenester farm-to-table banksy Austin
-            <CTooltip content="Tooltip text">
-              <CLink> twitter handle </CLink>
-            </CTooltip>
-
-            freegan cred raw denim single-origin coffee viral.
-          </p> */}
-        </CCardBody>
-      </CCard>
-	<Board target={`board2`}/>
+			<Board target={`board2`}/>
 
     </>
   )
