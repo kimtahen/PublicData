@@ -12,26 +12,26 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 
-const Dong = () => {
+const Hogae = () => {
   return (
     <>
       <CRow>
         <CCol>
           <CCard>
             <CCardHeader>
-              대구동구예비군훈련장
+              경기도호계예비군훈련장
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.yeongnam.com/web/view.php?key=20200622010003255"
+                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
                 target="_blank"
               >
-                대구 동구여성예비군 "내 고장은 내가 지킨다"
+                육군 50사단, 예비군훈련 돌입
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.yeongnam.com/mnt/file/202006/2020062201000801500032551.jpg"
+                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
                 fluid
                 className="mb-2"
               />
@@ -45,7 +45,7 @@ const Dong = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              대구동구예비군훈련장
+              경기도호계예비군훈련장
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -67,17 +67,17 @@ const Dong = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 동구 대구광역시 동구 팔공로(능성동) 1421
+                주소 : 대구광역시 북구 구리로(국우동) 183-35
   	      	  </p>
               <p className="muted">
-                연락처 :
+                연락처 : 053-322-5981
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Board target={`board4`} />
+      <Board target={`board15`} />
 
     </>
   )
@@ -85,4 +85,4 @@ const Dong = () => {
 
 
 }
-export default Dong
+export default Hogae

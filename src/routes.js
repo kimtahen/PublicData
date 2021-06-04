@@ -38,13 +38,38 @@ const Widgets = React.lazy(() => import('./views/widgets/Widgets'));
 const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
 
-const Test = React.lazy(()=>import('./views/test/Test'));
-const Videos = React.lazy(()=>import('./views/test/Videos'));
+const Test = React.lazy(() => import('./views/test/Test'));
+const Videos = React.lazy(() => import('./views/test/Videos'));
 
-const Seocho = React.lazy(()=>import('./views/camps/Seocho'));
-const Haeundae = React.lazy(()=>import('./views/camps/Haeundae'));
-const Jin = React.lazy(()=>import('./views/camps/Jin'));
+const Seocho = React.lazy(() => import('./views/camps/Seocho'));
+const Haeundae = React.lazy(() => import('./views/camps/Haeundae'));
+const Jin = React.lazy(() => import('./views/camps/Jin'));
+const Dong = React.lazy(() => import('./views/camps/Dong'));
+const Buk = React.lazy(() => import('./views/camps/Buk'));
 
+const Michuhol = React.lazy(() => import('./views/camps/Michuhol'));
+const Seo = React.lazy(() => import('./views/camps/Seo'));
+const Gwangsan = React.lazy(() => import('./views/camps/Gwangsan'));
+const Yuseong = React.lazy(() => import('./views/camps/Yuseong'));
+const Daedeok = React.lazy(() => import('./views/camps/Daedeok'));
+
+const Ulju = React.lazy(() => import('./views/camps/Ulju'));
+const Sejong = React.lazy(() => import('./views/camps/Sejong'));
+const Ilsan = React.lazy(() => import('./views/camps/Ilsan'));
+const Gimpo = React.lazy(() => import('./views/camps/Gimpo'));
+const Hogae = React.lazy(() => import('./views/camps/Hogae'));
+
+const Manjong = React.lazy(() => import('./views/camps/Manjong'));
+const Gangneung = React.lazy(() => import('./views/camps/Gangneung'));
+const Yangsuri = React.lazy(() => import('./views/camps/Yangsuri'));
+const Nonsan = React.lazy(() => import('./views/camps/Nonsan'));
+const Gunsan = React.lazy(() => import('./views/camps/Gunsan'));
+
+const Gwangyang = React.lazy(() => import('./views/camps/Gwangyang'));
+const Gyeongsan = React.lazy(() => import('./views/camps/Gyeongsan'));
+const Pohang = React.lazy(() => import('./views/camps/Pohang'));
+const Jeju = React.lazy(() => import('./views/camps/Jeju'));
+const Seogwipo = React.lazy(() => import('./views/camps/Seogwipo'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -85,15 +110,42 @@ const routes = [
   { path: '/notifications/modals', name: 'Modals', component: Modals },
   { path: '/notifications/toaster', name: 'Toaster', component: Toaster },
   { path: '/widgets', name: 'Widgets', component: Widgets },
-  { path: '/users', exact: true,  name: 'Users', component: Users },
+  { path: '/users', exact: true, name: 'Users', component: Users },
   { path: '/users/:id', exact: true, name: 'User Details', component: User },
 
-  { path: '/test', exact: true, name: 'TestPage', component: Test},
-  { path: '/test/', name: 'Videos', component: Videos},
+  { path: '/test', exact: true, name: 'TestPage', component: Test },
+  { path: '/test/', name: 'Videos', component: Videos },
 
-  { path: '/camps/Seocho', name: 'Seocho', component: Seocho},
-  { path: '/camps/Haeundae', name: 'Haeundae', component: Haeundae},
-  { path: '/camps/Jin', name: 'Jin', component: Jin}
+  { path: '/camps/Seocho', name: 'Seocho', component: Seocho },
+  { path: '/camps/Haeundae', name: 'Haeundae', component: Haeundae },
+  { path: '/camps/Jin', name: 'Jin', component: Jin },
+  { path: '/camps/Dong', name: 'Dong', component: Dong },
+  { path: '/camps/Buk', name: 'Buk', component: Buk },
+
+  { path: '/camps/Michuhol', name: 'Michuhol', component: Michuhol },
+  { path: '/camps/Seo', name: 'Seo', component: Seo },
+  { path: '/camps/Gwangsan', name: 'Gwangsan', component: Gwangsan },
+  { path: '/camps/Yuseong', name: 'Yuseong', component: Yuseong },
+  { path: '/camps/Daedeok', name: 'Daedeok', component: Daedeok },
+
+  { path: '/camps/Ulju', name: 'Ulju', component: Ulju },
+  { path: '/camps/Sejong', name: 'Sejong', component: Sejong },
+  { path: '/camps/Ilsan', name: 'Ilsan', component: Ilsan },
+  { path: '/camps/Gimpo', name: 'Gimpo', component: Gimpo },
+  { path: '/camps/Hogae', name: 'Hogae', component: Hogae },
+
+  { path: '/camps/Manjong', name: 'Manjong', component: Manjong },
+  { path: '/camps/Gangneung', name: 'Gangneung', component: Gangneung },
+  { path: '/camps/Yangsuri', name: 'Yangsuri', component: Yangsuri },
+  { path: '/camps/Nonsan', name: 'Nonsan', component: Nonsan },
+  { path: '/camps/Gunsan', name: 'Gunsan', component: Gunsan },
+
+  { path: '/camps/Gwangyang', name: 'Gwangyang', component: Gwangyang },
+  { path: '/camps/Gyeongsan', name: 'Gyeongsan', component: Gyeongsan },
+  { path: '/camps/Pohang', name: 'Pohang', component: Pohang },
+  { path: '/camps/Jeju', name: 'Jeju', component: Jeju },
+  { path: '/camps/Seogwipo', name: 'Seogwipo', component: Seogwipo }
+
 
 ];
 
