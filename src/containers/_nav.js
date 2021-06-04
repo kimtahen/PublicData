@@ -1,12 +1,12 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
 
-const _nav =  [
+const _nav = [
   {
     _tag: 'CSidebarNavItem',
     name: 'Test',
     to: '/test',
-    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
+    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon" />,
     badge: {
       color: 'info',
       text: 'NEW',
@@ -16,7 +16,7 @@ const _nav =  [
     _tag: 'CSidebarNavItem',
     name: 'Dashboard',
     to: '/dashboard',
-    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
+    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon" />,
     badge: {
       color: 'info',
       text: 'NEW',
@@ -26,7 +26,7 @@ const _nav =  [
     _tag: 'CSidebarNavItem',
     name: 'Testboard',
     to: '/testboard',
-    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon"/>,
+    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon" />,
     badge: {
       color: 'info',
       text: 'NEW',
@@ -39,7 +39,8 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: '서울특별시',
-    route: '/camps',
+    route: '/Seoul',
+    //route names should be different, as to avoid leaving multiple dropdowns open at the same time
     icon: 'cil-cursor',
     _children: [
       {
@@ -52,7 +53,7 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: '부산광역시',
-    route: '/camps',
+    route: '/Busan',
     icon: 'cil-cursor',
     _children: [
       {
@@ -70,206 +71,206 @@ const _nav =  [
   {
     _tag: 'CSidebarNavDropdown',
     name: '대구광역시',
-    route: '/buttons',
+    route: '/Daeugu',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '대구 동구 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Dong',
       },
       {
         _tag: 'CSidebarNavItem',
         name: '대구 북구 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Buk',
       }
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: '인천광역시',
-    route: '/buttons',
+    route: '/Incheon',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '인천 미추홀구 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Michuhol',
       },
       {
         _tag: 'CSidebarNavItem',
         name: '인천 서구 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Seo',
       }
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: '광주광역시',
-    route: '/buttons',
+    route: '/Gwangju',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '광주 광산구 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Gwangsan',
       }
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: '대전광역시',
-    route: '/buttons',
+    route: '/Daejeon',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '대전 유성구 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Yuseong',
       },
       {
         _tag: 'CSidebarNavItem',
         name: '대전 대덕구 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Daedeok',
       }
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: '울산광역시',
-    route: '/buttons',
+    route: '/Ulsan',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '울산 울주군 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Ulju',
       }
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: '세종특별자치시',
-    route: '/buttons',
+    route: '/Sejong',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '세종시 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Sejong',
       }
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: '경기도',
-    route: '/buttons',
+    route: '/Gyeonggi',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '일산 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Ilsan',
       },
       {
         _tag: 'CSidebarNavItem',
         name: '김포 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Gimpo',
       },
       {
         _tag: 'CSidebarNavItem',
         name: '호계 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Hogae',
       }
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: '강원도',
-    route: '/buttons',
+    route: '/Gangwon',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '만종 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Manjong',
       },
       {
         _tag: 'CSidebarNavItem',
         name: '강릉시 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Gangneung',
       }
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: '충청도',
-    route: '/buttons',
+    route: '/Chungcheong',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '양수리 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Yangsuri',
       },
       {
         _tag: 'CSidebarNavItem',
         name: '논산/계룡 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Nonsan',
       }
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: '전라도',
-    route: '/buttons',
+    route: '/Jeolla',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '군산 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Gunsan',
       },
       {
         _tag: 'CSidebarNavItem',
         name: '광양 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Gwangyang',
       }
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
     name: '경상도',
-    route: '/buttons',
+    route: '/Gyeongsang',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '경산 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Gyeongsan',
       },
       {
         _tag: 'CSidebarNavItem',
         name: '포항 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Pohang',
       }
     ],
   },
   {
     _tag: 'CSidebarNavDropdown',
-    name: '제두도',
-    route: '/buttons',
+    name: '제주도',
+    route: '/Jeju',
     icon: 'cil-cursor',
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '제주시 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Jeju',
       },
       {
         _tag: 'CSidebarNavItem',
         name: '서귀포 예비군훈련장',
-        to: '/buttons/brand-buttons',
+        to: '/camps/Seogwipo',
       }
     ],
   },

@@ -12,31 +12,32 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 
-const Jin = () => {
+const Dong = () => {
   return (
     <>
       <CRow>
         <CCol>
           <CCard>
             <CCardHeader>
-              부산진구예비군훈련장
+              대구동구예비군훈련장
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://council.busanjin.go.kr/content/activity/photo.html?gtid=photo&pg=vv&sid=&page=87&fidx=3605&opt=&sword="
+                href="https://www.yeongnam.com/web/view.php?key=20200622010003255"
                 target="_blank"
               >
-                개금동 예비군훈련장 현장확인
+                대구 동구여성예비군 "내 고장은 내가 지킨다"
 		          </CLink>
               <br />
 
               <CImg
-                src="https://council.busanjin.go.kr/UPDIR/photo/middle/photo_00001370.jpg"
+                src="https://www.yeongnam.com/mnt/file/202006/2020062201000801500032551.jpg"
                 fluid
                 className="mb-2"
               />
             </CCardBody>
           </CCard>
+
         </CCol>
       </CRow>
 
@@ -44,11 +45,11 @@ const Jin = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              부산진구예비군훈련장
+              대구동구예비군훈련장
             </CCardHeader>
             <CCardBody>
               <CImg
-                src="https://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=b385be40-cabc-11da-bc12-000001010d15&fileSn=20120615085939"
+                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
                 fluid
                 className="mb-2"
               />
@@ -66,7 +67,7 @@ const Jin = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 부산광역시 부산진구 백양대로320번길(개금동) 99
+                주소 : 대구광역시 동구 대구광역시 동구 팔공로(능성동) 1421
   	      	  </p>
               <p className="muted">
                 연락처 :
@@ -76,7 +77,7 @@ const Jin = () => {
         </CCol>
       </CRow>
 
-      <Board target={`board3`} />
+      <Board target={`board4`} />
 
     </>
   )
@@ -84,4 +85,4 @@ const Jin = () => {
 
 
 }
-export default Jin
+export default Dong
