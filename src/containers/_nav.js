@@ -6,11 +6,7 @@ const _nav = [
     _tag: 'CSidebarNavItem',
     name: 'Test',
     to: '/test',
-    icon: <CIcon name="cil-speedometer" customClasses="c-sidebar-nav-icon" />,
-    badge: {
-      color: 'info',
-      text: 'NEW',
-    }
+    icon: <CIcon name="cil-star" customClasses="c-sidebar-nav-icon" />,
   },
   {
     _tag: 'CSidebarNavItem',
