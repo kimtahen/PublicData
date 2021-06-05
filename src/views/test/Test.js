@@ -8,7 +8,7 @@ const Test = () => {
 
     return(
         <>
-		<Map/>
+		<Map loc={`서울특별시 서초구 신흥말길 79-39`}/>
 		<CRow>
 			<CCol>
 				<CCard>
@@ -35,7 +35,7 @@ const Test = () => {
 				</CCard>
 			</CCol>
 		</CRow>		
-            <Board target={`board1`}/>
+            <Board target={`board20`}/>
         </>
     )
 }

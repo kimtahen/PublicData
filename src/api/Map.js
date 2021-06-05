@@ -3,45 +3,33 @@ import {
     CCard,
     CCardBody,
     CCardHeader,
+	CCardFooter,
     CCol,
-    CDataTable,
     CRow,
-    CTextarea,
-    CFormGroup,
-    CLabel,
-    CInput,
-    CButton,
-    CCollapse,
-    CForm,
-    CFormText,
-    CCardFooter,
-    CModal,
-    CModalHeader,
-    CModalBody,
-    CModalFooter
+	CButton,
   } from '@coreui/react'
 const kakao = window.kakao;
 const Map  = ({loc}) => {
-	useEffect(()=>{
-		let places = new kakao.maps.services.Places();
-		let callback = function(result, status){
-			console.log('this is callback', status);
-			if(status === kakao.maps.services.Status.OK){
-				console.log('result:',result);
-			}
-		}
-		places.keywordSearch('서울특별시 서초구 신흥말길 79-39 ',callback);
-	},[])
-	
+	/* not including code for resizing of window size that rerenders the map */
+
 	useEffect(()=>{
 		let container = document.getElementById('map');
 		let options  = {
 			center: new kakao.maps.LatLng(37,127),
-			level: 3
+			level: 2
 		};
+		/* rendering map on to the document element id 'map' */
 		let map = new kakao.maps.Map(container, options);
 		
+		/* add control */
+		let mapTypeControl = new kakao.maps.MapTypeControl();
+		let zoomControl = new kakao.maps.ZoomControl();
+		map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
+		map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
+		
+		/* apply kakao map searching result */
 		let places = new kakao.maps.services.Places();
+		let geocoder = new kakao.maps.services.Geocoder();
 		let callback = function(result, status){
 			console.log('this is callback', status);
 			if(status === kakao.maps.services.Status.OK){
@@ -50,6 +38,7 @@ const Map  = ({loc}) => {
 					displayMarker(result[i]);
 					bounds.extend(new kakao.maps.LatLng(result[i].y, result[i].x));
 					map.setBounds(bounds);
+					map.setLevel(4)
 				}
 			}
 		}
@@ -59,21 +48,44 @@ const Map  = ({loc}) => {
 			});
 			marker.setMap(map);
 		}
-
-		places.keywordSearch('서울특별시 서초구 신흥말길 79-39 ',callback);
+		places.keywordSearch(loc,callback);
 		
 	},[]);
     return(
         <>
 		<CRow>
-			<CCol>
-				<CCard>
+		<CCol>
+		<CCard  color={`warning`} >
+		<CCardHeader>
+		지도
+		</CCardHeader>
+		<CCardBody>
+		<CRow>
+			<CCol xs="12" lg="8">
+				<CCard style={{
+					marginBottom: "0",
+				}}>
 					<CCardBody>
-						<div id={`map`} style={{width: "100%", height: "500px"}}></div>
-
+						<div id={`map`} style={{width: "100%", height: "250px"}}></div>
 					</CCardBody>
 				</CCard>
 			</CCol>
+			<CCol xs="12" lg="4" >
+				<CCard style={{
+					marginBottom: "0",
+					height: "100%"}}>
+					<CCardBody>
+						{loc}
+					</CCardBody>
+				</CCard>
+			</CCol>
+		</CRow>
+		</CCardBody>
+		<CCardFooter className={`text-center`}>
+			<CButton color={`warning`} onClick={()=> window.open(`https://map.kakao.com/link/search/${loc}`)}>길찾기</CButton>
+		</CCardFooter>
+		</CCard>
+		</CCol>
 		</CRow>
 		</>
 	)
