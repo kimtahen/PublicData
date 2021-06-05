@@ -171,7 +171,7 @@ const [passErrModal, setPassErrModal] = useState(false);
 return (
 	<>
 	{/* Validation Modal */}
-	<CModal
+	<CModal color="danger"
 	  show={modal}
 	>
 	  <CModalHeader closeButton>오류</CModalHeader>
@@ -206,6 +206,7 @@ return (
 	</CModal>
 	{/*passErrModal*/}
 	<CModal
+	  color="danger"
 	  show={passErrModal}
 	  onClose={()=>{passErrModal(false)}}
 	>

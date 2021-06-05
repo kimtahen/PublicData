@@ -65,7 +65,9 @@ const Map  = ({loc}) => {
 				<CCard style={{
 					marginBottom: "0",
 				}}>
-					<CCardBody>
+					<CCardBody style={{
+						padding: 0,
+					}}>
 						<div id={`map`} style={{width: "100%", height: "250px"}}></div>
 					</CCardBody>
 				</CCard>
@@ -82,7 +84,7 @@ const Map  = ({loc}) => {
 		</CRow>
 		</CCardBody>
 		<CCardFooter className={`text-center`}>
-			<CButton color={`warning`} onClick={()=> window.open(`https://map.kakao.com/link/search/${loc}`)}>길찾기</CButton>
+			<CButton size="sm" color={`warning`} onClick={()=> window.open(`https://map.kakao.com/link/search/${loc}`)}>길찾기</CButton>
 		</CCardFooter>
 		</CCard>
 		</CCol>
