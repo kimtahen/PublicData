@@ -78,6 +78,8 @@ const Board = ({target, name}) => {
           dispatch({ type: 'set_lastAccessSucceed', isLastAccessSucceed: true });
           if(!result){
             setDeletionSucceed(false);
+			deletionModalToggle();
+			setPassErrModal(true);
           }else{
             setDeletionSucceed(true);
             deletionModalToggle();
@@ -90,10 +92,9 @@ const Board = ({target, name}) => {
           dispatch({ type: 'set_lastAccessSucceed', isLastAccessSucceed: false });
         });
       fetch();
-      //fetch를 다시해야하는데 다시하면 밑에서 text를 찾을 수 없다고 뜸.
     }
     
-    const handleSubmit = () => {
+    const handleSubmit = async () => {
       if(nameRef.current.value == "" ||passwordRef.current.value == "" ||titleRef.current.value == "" ||textRef.current.value == ""  ){
         setModal(true);
       }else{
@@ -110,8 +111,9 @@ const Board = ({target, name}) => {
       deletionModalToggle();
       setSelIndex(index);
     }
-    const deleteSequence = ()=>{
-      deletion(selIndex,pwCheckRef.current.value);
+    const deleteSequence = async ()=>{
+      await deletion(selIndex,pwCheckRef.current.value);
+	  pwCheckRef.current.value = ""
     }
 
     
@@ -163,39 +165,63 @@ const deletionModalToggle = () => {
   setDeletionModal(!deletionModal);
 }
 
+//passErrModal
+const [passErrModal, setPassErrModal] = useState(false);
+
 return (
 	<>
 	{/* Validation Modal */}
 	<CModal
 	  show={modal}
 	>
-	  <CModalHeader closeButton>Error</CModalHeader>
+	  <CModalHeader closeButton>오류</CModalHeader>
 	  <CModalBody>
 		항목을 모두 입력하십시오.
-	</CModalBody>
+	  </CModalBody>
 	  <CModalFooter>
 		<CButton
-		  color="secondary"
+		  size="sm"
+		  color="danger"
 		  onClick={toggle}
-		>OK</CButton>
+		>확인</CButton>
 	  </CModalFooter>
 	</CModal>
 
 	{/* deletionModal */}
 	<CModal
 	  show={deletionModal}
+	  onClose={()=>{setDeletionModal(false)}}
 	>
-	  <CModalHeader closeButton>Delete</CModalHeader>
+	  <CModalHeader closeButton> 비밀번호 확인</CModalHeader>
 	  <CModalBody>
-		<CInput id="text-input" name="text-input" placeholder="Enter password" innerRef={pwCheckRef} />
+		<CInput id="text-input" name="text-input" placeholder="비밀번호" innerRef={pwCheckRef} />
 	  </CModalBody>
 	  <CModalFooter>
 		<CButton
+	      size="sm"
 		  color="danger"
 		  onClick={() => { deleteSequence();}}
-		>Delete</CButton>
+		>삭제</CButton>
 	  </CModalFooter>
 	</CModal>
+	{/*passErrModal*/}
+	<CModal
+	  show={passErrModal}
+	  onClose={()=>{passErrModal(false)}}
+	>
+	  <CModalHeader closeButton>오류</CModalHeader>
+	  <CModalBody>
+		비밀번호가 틀립니다.
+	  </CModalBody>
+	  <CModalFooter>
+		<CButton
+		  size="sm"
+		  color="danger"
+		  onClick={()=>{setPassErrModal(false)}}
+		>확인</CButton>
+	  </CModalFooter>
+	</CModal>
+
 
 	<CRow>
 	<CCol>
@@ -242,7 +268,7 @@ return (
 		  </CForm>
 		</CCardBody>
 		<CCardFooter>
-		  <CButton type="submit" onClick={()=>{handleSubmit();}} size="sm" color="dark"><CIcon name="cil-scrubber" /> Submit</CButton>
+		  <CButton type="submit" onClick={()=>{handleSubmit();}} size="sm" color="dark">등록</CButton>
 		</CCardFooter>
 		</CCard>
 
@@ -286,8 +312,8 @@ return (
 							{boardData[index]? boardData[index].text : ""}
                         </h6>
 
-                        <CButton size="sm" color="danger" className="ml-1" onClick={()=>{handleDeletion(item.id)}}>
-                          Delete
+                        <CButton size="sm" color="danger" className="ml-1" onClick={()=>{handleDeletion(item.id); console.log(item.id, 'buttonclicked')}}>
+                          삭제
                         </CButton>
                       </CCardBody>
                     </CCollapse>
