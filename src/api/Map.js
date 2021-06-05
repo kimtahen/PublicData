@@ -4,21 +4,7 @@ import {
     CCardBody,
     CCardHeader,
     CCol,
-    CDataTable,
     CRow,
-    CTextarea,
-    CFormGroup,
-    CLabel,
-    CInput,
-    CButton,
-    CCollapse,
-    CForm,
-    CFormText,
-    CCardFooter,
-    CModal,
-    CModalHeader,
-    CModalBody,
-    CModalFooter
   } from '@coreui/react'
 const kakao = window.kakao;
 const Map  = ({loc}) => {
@@ -64,6 +50,8 @@ const Map  = ({loc}) => {
 	},[]);
     return(
         <>
+		<CRow>
+		<CCol>
 		<CCard  color={`warning`} >
 		<CCardHeader>
 		Address
@@ -91,6 +79,8 @@ const Map  = ({loc}) => {
 		</CRow>
 		</CCardBody>
 		</CCard>
+		</CCol>
+		</CRow>
 		</>
 	)
 }

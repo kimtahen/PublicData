@@ -197,10 +197,17 @@ const Board = ({target}) => {
           </CModalFooter>
         </CModal>
 
-        {/* Form */}
+		<CRow>
+		<CCol>
+		<CCard color="info">
+		<CCardHeader>
+		Form
+		</CCardHeader>
+		<CCardBody>
         <CRow>
         <CCol xs="12" lg="4">
-            <CCard color="info" className="text-white text-center">
+        {/* Form */}
+            <CCard color={`dark`} className="text-white text-center" style={{marginBottom: 0}}>
             <CCardBody>
               <CForm action="" method="" className="form-horizontal" >
                 <CFormGroup row>
@@ -247,14 +254,13 @@ const Board = ({target}) => {
               </CForm>
             </CCardBody>
             <CCardFooter>
-              <CButton type="submit" onClick={()=>{handleSubmit();}} size="sm" color="info"><CIcon name="cil-scrubber" /> Submit</CButton>
+              <CButton type="submit" onClick={()=>{handleSubmit();}} size="sm" color="dark"><CIcon name="cil-scrubber" /> Submit</CButton>
             </CCardFooter>
             </CCard>
 
         </CCol>
         <CCol xs="12" lg="8">
-          <CCard>
-            
+          <CCard style={{marginBottom: 0, height: "100%"}}>
             <CCardBody>
             <CDataTable
               items={boardData}
@@ -305,7 +311,10 @@ const Board = ({target}) => {
           </CCard>
         </CCol>
         </CRow>
-            
+		</CCardBody>
+		</CCard>
+		</CCol>
+		</CRow>
 
         
         </>
