@@ -3,8 +3,10 @@ import {
     CCard,
     CCardBody,
     CCardHeader,
+	CCardFooter,
     CCol,
     CRow,
+	CButton,
   } from '@coreui/react'
 const kakao = window.kakao;
 const Map  = ({loc}) => {
@@ -27,6 +29,7 @@ const Map  = ({loc}) => {
 		
 		/* apply kakao map searching result */
 		let places = new kakao.maps.services.Places();
+		let geocoder = new kakao.maps.services.Geocoder();
 		let callback = function(result, status){
 			console.log('this is callback', status);
 			if(status === kakao.maps.services.Status.OK){
@@ -54,7 +57,7 @@ const Map  = ({loc}) => {
 		<CCol>
 		<CCard  color={`warning`} >
 		<CCardHeader>
-		Address
+		지도
 		</CCardHeader>
 		<CCardBody>
 		<CRow>
@@ -78,6 +81,9 @@ const Map  = ({loc}) => {
 			</CCol>
 		</CRow>
 		</CCardBody>
+		<CCardFooter className={`text-center`}>
+			<CButton color={`warning`} onClick={()=> window.open(`https://map.kakao.com/link/search/${loc}`)}>길찾기</CButton>
+		</CCardFooter>
 		</CCard>
 		</CCol>
 		</CRow>
