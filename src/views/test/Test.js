@@ -35,7 +35,7 @@ const Test = () => {
 				</CCard>
 			</CCol>
 		</CRow>		
-            <Board target={`board1`}/>
+            <Board target={`board20`}/>
         </>
     )
 }

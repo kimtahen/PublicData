@@ -27,7 +27,7 @@ import {useSelector, useDispatch} from 'react-redux'
 import {fetchData, writeData, deleteData} from './apis'
 import CIcon from '@coreui/icons-react';
 
-const Board = ({target}) => {
+const Board = ({target, name}) => {
     useEffect(()=>{
       fetch();
     },[])
@@ -155,114 +155,102 @@ const Board = ({target}) => {
       setModal(!modal);
     }
 
-    //deletionModal
-    const [deletionModal, setDeletionModal] = useState(false);
-    const [deletionSucceed, setDeletionSucceed] = useState(true);
-    const [selIndex, setSelIndex] = useState(-1);
-    const deletionModalToggle = () => {
-      setDeletionModal(!deletionModal);
-    }
+//deletionModal
+const [deletionModal, setDeletionModal] = useState(false);
+const [deletionSucceed, setDeletionSucceed] = useState(true);
+const [selIndex, setSelIndex] = useState(-1);
+const deletionModalToggle = () => {
+  setDeletionModal(!deletionModal);
+}
 
-    return (
-        <>
-        {/* Validation Modal */}
-        <CModal
-          show={modal}
-        >
-          <CModalHeader closeButton>Error</CModalHeader>
-          <CModalBody>
-            항목을 모두 입력하십시오.
-        </CModalBody>
-          <CModalFooter>
-            <CButton
-              color="secondary"
-              onClick={toggle}
-            >OK</CButton>
-          </CModalFooter>
-        </CModal>
+return (
+	<>
+	{/* Validation Modal */}
+	<CModal
+	  show={modal}
+	>
+	  <CModalHeader closeButton>Error</CModalHeader>
+	  <CModalBody>
+		항목을 모두 입력하십시오.
+	</CModalBody>
+	  <CModalFooter>
+		<CButton
+		  color="secondary"
+		  onClick={toggle}
+		>OK</CButton>
+	  </CModalFooter>
+	</CModal>
 
-        {/* deletionModal */}
-        <CModal
-          show={deletionModal}
-        >
-          <CModalHeader closeButton>Delete</CModalHeader>
-          <CModalBody>
-            <CInput id="text-input" name="text-input" placeholder="Enter password" innerRef={pwCheckRef} />
-          </CModalBody>
-          <CModalFooter>
-            <CButton
-              color="danger"
-              onClick={() => { deleteSequence();}}
-            >Delete</CButton>
-          </CModalFooter>
-        </CModal>
+	{/* deletionModal */}
+	<CModal
+	  show={deletionModal}
+	>
+	  <CModalHeader closeButton>Delete</CModalHeader>
+	  <CModalBody>
+		<CInput id="text-input" name="text-input" placeholder="Enter password" innerRef={pwCheckRef} />
+	  </CModalBody>
+	  <CModalFooter>
+		<CButton
+		  color="danger"
+		  onClick={() => { deleteSequence();}}
+		>Delete</CButton>
+	  </CModalFooter>
+	</CModal>
 
-		<CRow>
-		<CCol>
-		<CCard color="info">
-		<CCardHeader>
-		Form
-		</CCardHeader>
+	<CRow>
+	<CCol>
+	<CCard color="info">
+	<CCardHeader>
+	{name}
+	</CCardHeader>
+	<CCardBody>
+	<CRow>
+	<CCol xs="12" lg="4">
+	{/* Form */}
+		<CCard color={`dark`} className="text-white text-center" style={{marginBottom: 0, }}>
 		<CCardBody>
-        <CRow>
-        <CCol xs="12" lg="4">
-        {/* Form */}
-            <CCard color={`dark`} className="text-white text-center" style={{marginBottom: 0}}>
-            <CCardBody>
-              <CForm action="" method="" className="form-horizontal" >
-                <CFormGroup row>
-                  <CCol md="2">
-                    <CLabel htmlFor="text-input">Name</CLabel>
-                  </CCol>
-                  <CCol xs="12" md="10">
-                    <CInput id="text-input" name="text-input" placeholder="Enter name..." innerRef={nameRef}/>
-                    {/* <CFormText className="help-block">Please enter your name</CFormText> */}
-                  </CCol>
-                </CFormGroup>
-                <CFormGroup row>
-                  <CCol md="2">
-                    <CLabel htmlFor="hf-password">Password</CLabel>
-                  </CCol>
-                  <CCol xs="12" md="10">
-                    <CInput type="password" id="hf-password" name="hf-password" placeholder="Enter Password..." innerRef={passwordRef}/>
-                    {/* <CFormText className="help-block">Please enter your password</CFormText> */}
-                  </CCol>
-                </CFormGroup>
-                <CFormGroup row>
-                  <CCol md="2">
-                    <CLabel htmlFor="text-input">title</CLabel>
-                  </CCol>
-                  <CCol xs="12" md="10">
-                    <CInput id="text-input" name="text-input" placeholder="Enter name..." innerRef={titleRef}/>
-                    <CFormText className="help-block"></CFormText>
-                  </CCol>
-                </CFormGroup>
-                <CFormGroup row>
-                  <CCol md="2">
-                    <CLabel htmlFor="text-input">Comment</CLabel>
-                  </CCol>
-                  <CCol xs="12" md="10">
-                      <CTextarea 
-                      name="textarea-input" 
-                      id="textarea-input" 
-                      rows="5"
-                      placeholder="Content..." 
-                      innerRef={textRef}
-                      required/>
-                    </CCol>
-                </CFormGroup>
-              </CForm>
-            </CCardBody>
-            <CCardFooter>
-              <CButton type="submit" onClick={()=>{handleSubmit();}} size="sm" color="dark"><CIcon name="cil-scrubber" /> Submit</CButton>
-            </CCardFooter>
-            </CCard>
+		  <CForm action="" method="" className="form-horizontal" >
+			<CFormGroup row>
+			  <CCol xs="12">
+				<CInput id="text-input" name="text-input" placeholder="이름" innerRef={nameRef}/>
+				{/* <CFormText className="help-block">Please enter your name</CFormText> */}
+			  </CCol>
+			</CFormGroup>
+			<CFormGroup row>
+			  <CCol xs="12">
+				<CInput type="password" id="hf-password" name="hf-password" placeholder="비밀번호" innerRef={passwordRef}/>
+				{/* <CFormText className="help-block">Please enter your password</CFormText> */}
+			  </CCol>
+			</CFormGroup>
+			<CFormGroup row>
+			  <CCol xs="12">
+				<CInput id="text-input" name="text-input" placeholder="제목" innerRef={titleRef}/>
+				<CFormText className="help-block"></CFormText>
+			  </CCol>
+			</CFormGroup>
+			<CFormGroup row>
+			  <CCol xs="12">
+				  <CTextarea 
+				  name="textarea-input" 
+				  id="textarea-input" 
+				  rows="5"
+				  placeholder="내용" 
+				  innerRef={textRef}
+				  required/>
+				</CCol>
+			</CFormGroup>
+		  </CForm>
+		</CCardBody>
+		<CCardFooter>
+		  <CButton type="submit" onClick={()=>{handleSubmit();}} size="sm" color="dark"><CIcon name="cil-scrubber" /> Submit</CButton>
+		</CCardFooter>
+		</CCard>
 
-        </CCol>
-        <CCol xs="12" lg="8">
-          <CCard style={{marginBottom: 0, height: "100%"}}>
-            <CCardBody>
-            <CDataTable
+	</CCol>
+	<CCol xs="12" lg="8">
+	  <CCard style={{marginBottom: 0, height: "100%"}}>
+		<CCardBody>
+		<CDataTable
               items={boardData}
               fields={fields}
               columnFilter
@@ -319,5 +307,9 @@ const Board = ({target}) => {
         
         </>
     )
+}
+Board.defaultProps = {
+	target: 'board20',
+	name: '게시판',
 }
 export default Board;
