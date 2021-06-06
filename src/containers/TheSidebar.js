@@ -12,6 +12,7 @@ import {
   CSidebarNavItem,
 } from '@coreui/react'
 
+
 import CIcon from '@coreui/icons-react'
 
 // sidebar nav config
@@ -26,16 +27,8 @@ const TheSidebar = () => {
       onShowChange={(val) => dispatch({type: 'set', sidebarShow: val })}
     >
       <CSidebarBrand className="d-md-down-none" to="/">
-        <CIcon
-          className="c-sidebar-brand-full"
-          name="logo-negative"
-          height={35}
-        />
-        <CIcon
-          className="c-sidebar-brand-minimized"
-          name="sygnet"
-          height={35}
-        />
+	  	<div className="c-sidebar-brand-full">전 역 자 들</div>
+	  	<div className="c-sidebar-brand-minimized">yeb</div>
       </CSidebarBrand>
       <CSidebarNav>
 

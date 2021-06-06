@@ -31,7 +31,6 @@ const Map  = ({loc}) => {
 		let places = new kakao.maps.services.Places();
 		let geocoder = new kakao.maps.services.Geocoder();
 		let callback = function(result, status){
-			console.log('this is callback', status);
 			if(status === kakao.maps.services.Status.OK){
 				let bounds = new kakao.maps.LatLngBounds();
 				for (let i=0; i<result.length; i++){
