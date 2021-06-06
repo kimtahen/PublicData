@@ -68,7 +68,7 @@ const Dong = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 동구 대구광역시 동구 팔공로(능성동) 1421
+                주소 : 대구광역시 동구 팔공로(능성동) 1421
   	      	  </p>
               <p className="muted">
                 연락처 :
@@ -78,7 +78,7 @@ const Dong = () => {
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`대구광역시 동구 팔공로 1421`} />
 
       <Board target={`board4`} />
 

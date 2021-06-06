@@ -24,15 +24,15 @@ const Gwangsan = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="http://www.igj.co.kr/news/articleView.html?idxno=24324"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                2012년 예비군훈련 더 쾌적하게, 더 성과 있게
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
+                src="http://www.igj.co.kr/news/photo/201203/24324_44609_343.jpg"
                 fluid
                 className="mb-2"
               />
@@ -49,11 +49,6 @@ const Gwangsan = () => {
               광주광산구예비군훈련장
             </CCardHeader>
             <CCardBody>
-              <CImg
-                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
-                fluid
-                className="mb-2"
-              />
             </CCardBody>
           </CCard>
         </CCol>
@@ -68,17 +63,17 @@ const Gwangsan = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 광주광역시 광산구 창교길(본덕동) 19 광산 예비군훈련장
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 062-943-9113
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`광주광역시 광산구 창교길 19`} />
 
       <Board target={`board8`} />
 

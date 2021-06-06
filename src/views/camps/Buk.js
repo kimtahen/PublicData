@@ -78,7 +78,7 @@ const Buk = () => {
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`대구광역시 북구 구리로 183-35`} />
 
       <Board target={`board5`} />
 
