@@ -11,6 +11,7 @@ import {
 import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
+import Map from '../../api/Map';
 
 const Dong = () => {
   return (
@@ -76,6 +77,8 @@ const Dong = () => {
           </CCard>
         </CCol>
       </CRow>
+
+      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
 
       <Board target={`board4`} />
 

@@ -11,6 +11,7 @@ import {
 } from '@coreui/react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
+import Map from '../../api/Map';
 
 const Haeundae = () => {
 
@@ -68,6 +69,8 @@ const Haeundae = () => {
           </CCard>
         </CCol>
       </CRow>
+
+      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
 
       <Board target={`board2`} />
 
