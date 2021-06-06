@@ -11,6 +11,7 @@ import {
 import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
+import Map from '../../api/Map';
 
 const Gunsan = () => {
   return (
@@ -23,15 +24,15 @@ const Gunsan = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="http://m.dailyjeonbuk.com/news/articleView.html?idxno=149048"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                군산, 제44주년 예비군의 날 맞이 국방부장관상 수상
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
+                src="http://www.dailyjeonbuk.com/news/photo/201204/149048_99108_3456.jpg"
                 fluid
                 className="mb-2"
               />
@@ -49,7 +50,7 @@ const Gunsan = () => {
             </CCardHeader>
             <CCardBody>
               <CImg
-                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
+                src=""
                 fluid
                 className="mb-2"
               />
@@ -67,15 +68,17 @@ const Gunsan = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 전라북도 군산시 광월길(옥구읍) 89
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 063-464-9117
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
+
+      <Map loc={`전라북도 군산시 광월길 89`} />
 
       <Board target={`board20`} />
 

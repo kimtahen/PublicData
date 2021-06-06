@@ -11,6 +11,7 @@ import {
 import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
+import Map from '../../api/Map';
 
 const Dong = () => {
   return (
@@ -67,7 +68,7 @@ const Dong = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 동구 대구광역시 동구 팔공로(능성동) 1421
+                주소 : 대구광역시 동구 팔공로(능성동) 1421
   	      	  </p>
               <p className="muted">
                 연락처 :
@@ -76,6 +77,8 @@ const Dong = () => {
           </CCard>
         </CCol>
       </CRow>
+
+      <Map loc={`대구광역시 동구 팔공로 1421`} />
 
       <Board target={`board4`} />
 

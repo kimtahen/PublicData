@@ -11,6 +11,7 @@ import {
 import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
+import Map from '../../api/Map';
 
 const Gimpo = () => {
   return (
@@ -23,15 +24,15 @@ const Gimpo = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="http://m.igimpo.com/news/articleView.html?idxno=25786"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                지역 지키는 첨병, 우리는 특전 예비군!
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
+                src="http://www.igimpo.com/news/photo/201110/25786_12382_35.jpg"
                 fluid
                 className="mb-2"
               />
@@ -49,7 +50,7 @@ const Gimpo = () => {
             </CCardHeader>
             <CCardBody>
               <CImg
-                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
+                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=dcbf8750-fe4d-11de-bc66-000001010d0c&fileSn=20160926143039"
                 fluid
                 className="mb-2"
               />
@@ -67,15 +68,17 @@ const Gimpo = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 경기도 김포시 군하로(월곶면) 123
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 032-454-6951
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
+
+      <Map loc={`경기도 김포시 군하로 123`} />
 
       <Board target={`board14`} />
 
