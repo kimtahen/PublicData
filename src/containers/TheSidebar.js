@@ -12,6 +12,7 @@ import {
   CSidebarNavItem,
 } from '@coreui/react'
 
+
 import CIcon from '@coreui/icons-react'
 
 // sidebar nav config
@@ -27,8 +28,8 @@ const TheSidebar = () => {
     >
       <CSidebarBrand className="d-md-down-none" to="/">
 	  	<div className="c-sidebar-brand-full">전 역 자 들</div>
+	  	<div className="c-sidebar-brand-minimized">yeb</div>
       </CSidebarBrand>
-
       <CSidebarNav>
 
         <CCreateElement
