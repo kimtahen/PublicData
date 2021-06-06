@@ -1,0 +1,43 @@
+[debug] [2021-06-06T07:34:13.497Z] ----------------------------------------------------------------------
+[debug] [2021-06-06T07:34:13.500Z] Command:       /usr/bin/node /home/PublicData/node_modules/.bin/firebase login
+[debug] [2021-06-06T07:34:13.500Z] CLI Version:   9.11.0
+[debug] [2021-06-06T07:34:13.500Z] Platform:      linux
+[debug] [2021-06-06T07:34:13.500Z] Node Version:  v12.21.0
+[debug] [2021-06-06T07:34:13.501Z] Time:          Sun Jun 06 2021 07:34:13 GMT+0000 (Coordinated Universal Time)
+[debug] [2021-06-06T07:34:13.501Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-06-06T07:34:13.503Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2021-06-06T07:34:14.103Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-06-06T07:34:14.104Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=599048639&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-06-06T07:35:34.566Z] ----------------------------------------------------------------------
+[debug] [2021-06-06T07:35:34.569Z] Command:       /usr/bin/node /home/PublicData/node_modules/.bin/firebase login:ci
+[debug] [2021-06-06T07:35:34.569Z] CLI Version:   9.11.0
+[debug] [2021-06-06T07:35:34.569Z] Platform:      linux
+[debug] [2021-06-06T07:35:34.569Z] Node Version:  v12.21.0
+[debug] [2021-06-06T07:35:34.570Z] Time:          Sun Jun 06 2021 07:35:34 GMT+0000 (Coordinated Universal Time)
+[debug] [2021-06-06T07:35:34.570Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=164639233&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-06-06T07:37:17.486Z] ----------------------------------------------------------------------
+[debug] [2021-06-06T07:37:17.489Z] Command:       /usr/bin/node /home/PublicData/node_modules/.bin/firebase login:ci --no-localhost
+[debug] [2021-06-06T07:37:17.489Z] CLI Version:   9.11.0
+[debug] [2021-06-06T07:37:17.489Z] Platform:      linux
+[debug] [2021-06-06T07:37:17.489Z] Node Version:  v12.21.0
+[debug] [2021-06-06T07:37:17.490Z] Time:          Sun Jun 06 2021 07:37:17 GMT+0000 (Coordinated Universal Time)
+[debug] [2021-06-06T07:37:17.490Z] ----------------------------------------------------------------------
+[debug] 
+[info] 
+[info] Visit this URL on any device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=748965612&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob
+[info] 
