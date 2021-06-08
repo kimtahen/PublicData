@@ -6,6 +6,8 @@ import {
   CRow,
   CCol,
   CImg,
+  CEmbed,
+  CEmbedItem,
   CLink
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
