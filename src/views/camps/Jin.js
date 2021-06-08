@@ -77,7 +77,7 @@ const Jin = () => {
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`부산광역시 부산진구 백양대로320번길 99`} />
 
       <Board target={`board3`} />
 

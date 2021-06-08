@@ -24,15 +24,15 @@ const Pohang = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="https://www.donga.com/news/Society/article/all/20200105/99084761/1"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                예비군 동원훈련 ‘1년 단축’ 앞둔 軍, 동원 필요 규모 파악중
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
+                src="https://dimg.donga.com/wps/NEWS/IMAGE/2020/01/05/99084737.2.jpg"
                 fluid
                 className="mb-2"
               />
@@ -49,11 +49,11 @@ const Pohang = () => {
               경상도포항예비군훈련장
             </CCardHeader>
             <CCardBody>
-              <CImg
+              {/* <CImg
                 src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
                 fluid
                 className="mb-2"
-              />
+              /> */}
             </CCardBody>
           </CCard>
         </CCol>
@@ -68,17 +68,17 @@ const Pohang = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 경상북도 포항시 남구 도구길(동해면) 33
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 :
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`경상북도 포항시 남구 도구길 33`} />
 
       <Board target={`board23`} />
 

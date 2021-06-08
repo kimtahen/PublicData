@@ -6,7 +6,10 @@ import {
   CRow,
   CCol,
   CImg,
+  CEmbed,
+  CEmbedItem,
   CLink
+
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
@@ -23,16 +26,31 @@ const Manjong = () => {
               강원도만종예비군훈련장
             </CCardHeader>
             <CCardBody>
+              <CEmbed>
+                <CEmbedItem iframe width="560" height="315" src="https://www.youtube.com/embed/eqZKfwRSX0g" />
+              </CEmbed>
+            </CCardBody>
+          </CCard>
+        </CCol>
+      </CRow>
+
+      <CRow>
+        <CCol>
+          <CCard>
+            <CCardHeader>
+              강원도만종예비군훈련장
+            </CCardHeader>
+            <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="http://chosunnews.co.kr/news/view.php?no=7279"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                만종예비군훈련장 영상모의사격장 시민체험행사 참가자 모집
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
+                src="http://chosunnews.co.kr/data/tmp/1909/20190904160943_qcyduvrl.jpg"
                 fluid
                 className="mb-2"
               />
@@ -50,7 +68,7 @@ const Manjong = () => {
             </CCardHeader>
             <CCardBody>
               <CImg
-                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
+                src=""
                 fluid
                 className="mb-2"
               />
@@ -68,17 +86,17 @@ const Manjong = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 강원도 원주시 상만종길(호저면) 81-6
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 033-762-7113
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`강원도 원주시 상만종길 81-6`} />
 
       <Board target={`board16`} />
 

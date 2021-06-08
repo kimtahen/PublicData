@@ -6,6 +6,8 @@ import {
   CRow,
   CCol,
   CImg,
+  CEmbed,
+  CEmbedItem,
   CLink
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
@@ -16,6 +18,7 @@ import Map from '../../api/Map';
 const Seo = () => {
   return (
     <>
+
       <CRow>
         <CCol>
           <CCard>
@@ -24,18 +27,16 @@ const Seo = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="https://www.youtube.com/watch?v=NFFnsEUa85M"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                [내기소] “야생동물, 불쌍하다고 섣불리 구조하면 안 돼요”
 		          </CLink>
               <br />
 
-              <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
-                fluid
-                className="mb-2"
-              />
+              <CEmbed>
+                <CEmbedItem iframe width="560" height="315" src="https://www.youtube.com/embed/NFFnsEUa85M" />
+              </CEmbed>
             </CCardBody>
           </CCard>
 
@@ -50,7 +51,7 @@ const Seo = () => {
             </CCardHeader>
             <CCardBody>
               <CImg
-                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
+                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=8a1735e0-c29a-11da-939f-000001010d15&fileSn=20161227153315"
                 fluid
                 className="mb-2"
               />
@@ -68,17 +69,17 @@ const Seo = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 인천광역시 계양구 둑실동 252
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 032-553-6113
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`인천광역시 계양구 둑실동 252`} />
 
       <Board target={`board7`} />
 

@@ -49,6 +49,11 @@ const Gwangsan = () => {
               광주광산구예비군훈련장
             </CCardHeader>
             <CCardBody>
+              <CImg
+                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=81fe2100-ce72-11da-8eaa-000001010d15&fileSn=20140319163711"
+                fluid
+                className="mb-2"
+              />
             </CCardBody>
           </CCard>
         </CCol>

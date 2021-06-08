@@ -24,15 +24,15 @@ const Yuseong = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="https://news.mt.co.kr/mtview.php?no=2015051517198232085"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                [사진]예비군 훈련 '총구는 안전고리에'
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
+                src="https://thumb.mt.co.kr/06/2015/05/2015051517198232085_1.jpg/dims/optimize/"
                 fluid
                 className="mb-2"
               />
@@ -50,7 +50,7 @@ const Yuseong = () => {
             </CCardHeader>
             <CCardBody>
               <CImg
-                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
+                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=88642250-a7f9-11da-bf7c-000001010d15&fileSn=20150420134548"
                 fluid
                 className="mb-2"
               />
@@ -68,17 +68,17 @@ const Yuseong = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 대전광역시 유성구 하기로143번길(자운동) 84
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 042-824-0259
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`대전광역시 유성구 하기로143번길 84`} />
 
       <Board target={`board9`} />
 

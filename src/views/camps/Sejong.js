@@ -24,15 +24,15 @@ const Sejong = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="https://www.ajunews.com/view/20150515171351039"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                임상전 세종시의장, 예비군훈련장 안전점검
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
+                src="https://image.ajunews.com/content/image/2015/05/15/20150515171408120411.jpg"
                 fluid
                 className="mb-2"
               />
@@ -42,7 +42,7 @@ const Sejong = () => {
         </CCol>
       </CRow>
 
-      <CRow>
+      {/* <CRow>
         <CCol>
           <CCard>
             <CCardHeader>
@@ -57,7 +57,7 @@ const Sejong = () => {
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
+      </CRow> */}
 
       <CRow>
         <CCol>
@@ -68,17 +68,17 @@ const Sejong = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 세종특별자치시 봉산로(전동면) 345
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 044-862-3213
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`세종특별자치시 봉산로 345`} />
 
       <Board target={`board12`} />
 
