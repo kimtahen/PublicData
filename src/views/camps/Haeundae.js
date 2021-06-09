@@ -70,7 +70,7 @@ const Haeundae = () => {
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`부산광역시 해운대구 백동길 43`} />
 
       <Board target={`board2`} />
 

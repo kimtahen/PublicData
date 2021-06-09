@@ -6,6 +6,8 @@ import {
   CRow,
   CCol,
   CImg,
+  CEmbed,
+  CEmbedItem,
   CLink
 } from '@coreui/react'
 import CIcon from '@coreui/icons-react'
@@ -24,25 +26,23 @@ const Yangsuri = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="https://www.youtube.com/watch?v=HvnhU_IqBtc"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                [제53주년 예비군의 날] 육군 37사단, 예비군의 날 대통령 부대표창 수상
 		          </CLink>
               <br />
 
-              <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
-                fluid
-                className="mb-2"
-              />
+              <CEmbed>
+                <CEmbedItem iframe width="560" height="315" src="https://www.youtube.com/embed/HvnhU_IqBtc" />
+              </CEmbed>
+
             </CCardBody>
           </CCard>
-
         </CCol>
       </CRow>
 
-      <CRow>
+      {/* <CRow>
         <CCol>
           <CCard>
             <CCardHeader>
@@ -57,7 +57,7 @@ const Yangsuri = () => {
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
+      </CRow> */}
 
       <CRow>
         <CCol>
@@ -68,17 +68,17 @@ const Yangsuri = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 충청북도 옥천군 마암로 125-12
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 031-773-6113
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`충청북도 옥천군 마암로 125-12`} />
 
       <Board target={`board18`} />
 

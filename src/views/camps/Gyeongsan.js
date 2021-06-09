@@ -24,15 +24,15 @@ const Gyeongsan = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="http://ksinews.co.kr/mobile/view.asp?intNum=1369"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                경산 예비군 교장 서바이벌훈련장 준공
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
+                src="http://www.ksinews.co.kr/ArticleUpload/8/2007032817321.jpg"
                 fluid
                 className="mb-2"
               />
@@ -50,7 +50,7 @@ const Gyeongsan = () => {
             </CCardHeader>
             <CCardBody>
               <CImg
-                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
+                src=""
                 fluid
                 className="mb-2"
               />
@@ -68,17 +68,17 @@ const Gyeongsan = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 경상북도 경산시 금박로(자인면) 143
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 053-857-6113
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`경상북도 경산시 금박로 143`} />
 
       <Board target={`board22`} />
 

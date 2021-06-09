@@ -24,15 +24,15 @@ const Seogwipo = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="http://www.headlinejeju.co.kr/news/articleView.html?idxno=360467"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                정제원 제주병무청장, 예비군 동원훈련장 방문
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
+                src="http://www.headlinejeju.co.kr/news/photo/201904/360467_257005_1245.jpg"
                 fluid
                 className="mb-2"
               />
@@ -50,7 +50,7 @@ const Seogwipo = () => {
             </CCardHeader>
             <CCardBody>
               <CImg
-                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
+                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=cfc92740-a2f2-11e5-ab6c-00000b02256f&fileSn=20170829093430"
                 fluid
                 className="mb-2"
               />
@@ -68,17 +68,17 @@ const Seogwipo = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 제주특별자치도 서귀포시 인정오름로(토평동) 144
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 064-905-3803
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`제주특별자치도 서귀포시 인정오름로 144`} />
 
       <Board target={`board25`} />
 

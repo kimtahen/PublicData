@@ -24,15 +24,15 @@ const Jeju = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="http://www.headlinejeju.co.kr/news/articleView.html?idxno=360467"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                정제원 제주병무청장, 예비군 동원훈련장 방문
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
+                src="http://www.headlinejeju.co.kr/news/photo/201904/360467_257005_1245.jpg"
                 fluid
                 className="mb-2"
               />
@@ -50,7 +50,7 @@ const Jeju = () => {
             </CCardHeader>
             <CCardBody>
               <CImg
-                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
+                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=bcadbb20-b29d-11e5-ae7d-00000b022570&fileSn=20160104134832"
                 fluid
                 className="mb-2"
               />
@@ -68,17 +68,17 @@ const Jeju = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 제주특별자치도 제주시 종천길 60
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 064-905-3754
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`제주특별자치도 제주시 종천길 60`} />
 
       <Board target={`board24`} />
 

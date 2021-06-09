@@ -24,15 +24,15 @@ const Ulju = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="https://m.news1.kr/articles/?953640"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                [단신] 울주군, 예비군 육성지원 우수지자체 감사패 받아
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
+                src="https://image.news1.kr/system/photos/2012/12/31/336564/article.jpg/dims/optimize?1356931896"
                 fluid
                 className="mb-2"
               />
@@ -50,7 +50,7 @@ const Ulju = () => {
             </CCardHeader>
             <CCardBody>
               <CImg
-                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
+                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=96f91cd0-e098-11da-9a0d-000001010d15&fileSn=20170425085459"
                 fluid
                 className="mb-2"
               />
@@ -68,17 +68,17 @@ const Ulju = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 울산 울주군 언양읍 반천리 곰재길 229길(반천리923번지) 중구예비군훈련장
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 052-263-4397
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`울산 울주군 언양읍 반천리 곰재길 229길`} />
 
       <Board target={`board11`} />
 

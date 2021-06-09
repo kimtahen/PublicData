@@ -24,7 +24,7 @@ const Hogae = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href=""
                 target="_blank"
               >
                 육군 50사단, 예비군훈련 돌입

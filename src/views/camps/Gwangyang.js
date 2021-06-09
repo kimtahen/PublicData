@@ -24,15 +24,15 @@ const Gwangyang = () => {
             </CCardHeader>
             <CCardBody>
               <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
+                href="http://www.gukjenews.com/news/articleView.html?idxno=728455"
                 target="_blank"
               >
-                육군 50사단, 예비군훈련 돌입
+                광양시, 군부대․예비군 지휘관과 방위태세 점검
 		          </CLink>
               <br />
 
               <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
+                src="https://cdn.gukjenews.com/news/photo/201706/728455_516211_4029.jpg"
                 fluid
                 className="mb-2"
               />
@@ -50,7 +50,7 @@ const Gwangyang = () => {
             </CCardHeader>
             <CCardBody>
               <CImg
-                src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
+                src=""
                 fluid
                 className="mb-2"
               />
@@ -68,17 +68,17 @@ const Gwangyang = () => {
             </CCardHeader>
             <CCardBody>
               <p className="muted">
-                주소 : 대구광역시 북구 구리로(국우동) 183-35
+                주소 : 전라남도 광양시 조양길(봉강면) 47-20 7391부대 4대대
   	      	  </p>
               <p className="muted">
-                연락처 : 053-322-5981
+                연락처 : 061-763-9569
   	      	  </p>
             </CCardBody>
           </CCard>
         </CCol>
       </CRow>
 
-      <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+      <Map loc={`전라남도 광양시 조양길 47-20`} />
 
       <Board target={`board21`} />
 
