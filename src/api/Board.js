@@ -173,6 +173,7 @@ return (
 	{/* Validation Modal */}
 	<CModal color="danger"
 	  show={modal}
+	  onClose={()=>{setModal(!modal)}}
 	>
 	  <CModalHeader closeButton>오류</CModalHeader>
 	  <CModalBody>
