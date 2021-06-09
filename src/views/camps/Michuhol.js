@@ -49,6 +49,7 @@ const Michuhol = () => {
             <CCardBody>
               <CImg
                 src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=e9d55050-c544-11da-889b-000001010d15&fileSn=20120620133107"
+	  			style={{width: '100%'}}
                 fluid
                 className="mb-2"
               />
