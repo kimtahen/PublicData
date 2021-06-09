@@ -27,6 +27,10 @@ const _nav = [
   },
   {
     _tag: 'CSidebarNavTitle',
+    _children: ['Introduction']
+  },
+  {
+    _tag: 'CSidebarNavTitle',
     _children: ['훈련장 게시판']
   },
   {
