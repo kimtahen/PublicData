@@ -54,9 +54,9 @@ const Map  = ({loc}) => {
         <>
 		<CRow>
 		<CCol>
-		<CCard  color={`warning`} >
+		<CCard  color={`white`} >
 		<CCardHeader>
-		지도
+			<h1 class='display-header' style={{marginBottom: 0}}>MAPS</h1>
 		</CCardHeader>
 		<CCardBody>
 		<CRow>
