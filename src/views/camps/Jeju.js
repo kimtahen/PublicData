@@ -52,6 +52,7 @@ const Jeju = () => {
               <CImg
                 src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=bcadbb20-b29d-11e5-ae7d-00000b022570&fileSn=20160104134832"
                 fluid
+	  			style={{width: '100%'}}
                 className="mb-2"
               />
             </CCardBody>

@@ -25,6 +25,7 @@ const TheSidebar = () => {
     <CSidebar
       show={show}
       onShowChange={(val) => dispatch({type: 'set', sidebarShow: val })}
+	  colorScheme={`dark`}
     >
       <CSidebarBrand className="d-md-down-none" to="/">
 	  	<div className="c-sidebar-brand-full">전 역 자 들</div>
