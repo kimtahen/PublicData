@@ -25,7 +25,7 @@ const Videos = () => {
             </CCardHeader>
             <CCardBody>
               <CEmbed>
-                <CEmbedItem src="https://www.youtube.com/embed/zChVMZUi4XM"/>
+                <CEmbedItem src="https://www.youtube.com/embed/zChVMZUi4XM" />
               </CEmbed>
             </CCardBody>
           </CCard>

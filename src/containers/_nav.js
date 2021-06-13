@@ -1,6 +1,6 @@
 import React from 'react'
 import CIcon from '@coreui/icons-react'
-import {freeSet, brandSet} from '@coreui/icons'
+import { freeSet, brandSet } from '@coreui/icons'
 import Seoul from '../customicon/Seoul.svg'
 import Busan from '../customicon/Busan.svg'
 import Daejeon from '../customicon/Daejeon.svg'
@@ -17,13 +17,19 @@ const _nav = [
     _tag: 'CSidebarNavItem',
     name: 'Test',
     to: '/test',
-	icon: <img src={Seoul} width="20" height="20" style={{marginRight: "20px"}} />
+    icon: <img src={Seoul} width="20" height="20" style={{ marginRight: "20px" }} />
   },
   {
     _tag: 'CSidebarNavItem',
     name: 'Home',
     to: '/',
-    icon: <CIcon name="cilHome"  customClasses="c-sidebar-nav-icon" />,
+    icon: <CIcon name="cilHome" customClasses="c-sidebar-nav-icon" />,
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: '소개',
+    to: '/test/Intro',
+    icon: <CIcon name="cilHome" customClasses="c-sidebar-nav-icon" />,
   },
   {
     _tag: 'CSidebarNavTitle',
@@ -34,7 +40,7 @@ const _nav = [
     name: '서울특별시',
     route: '/Seoul',
     //route names should be different, as to avoid leaving multiple dropdowns open at the same time
-	icon: <img src={Seoul} width="20" height="20" style={{marginRight: "20px"}} />,
+    icon: <img src={Seoul} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -47,7 +53,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '부산광역시',
     route: '/Busan',
-	icon: <img src={Busan} width="20" height="20" style={{marginRight: "20px"}} />,
+    icon: <img src={Busan} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -65,7 +71,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '대구광역시',
     route: '/Daeugu',
-	icon: <img src={Daegu} width="20" height="20" style={{marginRight: "20px"}} />,
+    icon: <img src={Daegu} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -83,7 +89,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '인천광역시',
     route: '/Incheon',
-	icon: <img src={Incheon} width="20" height="20" style={{marginRight: "20px"}} />,
+    icon: <img src={Incheon} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -101,7 +107,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '광주광역시',
     route: '/Gwangju',
-	icon: <img src={Gwangju} width="20" height="20" style={{marginRight: "20px"}} />,
+    icon: <img src={Gwangju} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -114,7 +120,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '대전광역시',
     route: '/Daejeon',
-	icon: <img src={Daejeon} width="20" height="20" style={{marginRight: "20px"}} />,
+    icon: <img src={Daejeon} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -132,7 +138,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '울산광역시',
     route: '/Ulsan',
-	icon: <img src={Ulsan} width="20" height="20" style={{marginRight: "20px"}} />,
+    icon: <img src={Ulsan} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -145,7 +151,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '세종특별자치시',
     route: '/Sejong',
-	icon: <img src={Sejong} width="20" height="20" style={{marginRight: "20px"}} />,
+    icon: <img src={Sejong} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -158,7 +164,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '경기도',
     route: '/Gyeonggi',
-	icon: <img src={Gyeonggi} width="20" height="20" style={{marginRight: "20px"}} />,
+    icon: <img src={Gyeonggi} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -181,7 +187,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '강원도',
     route: '/Gangwon',
-	icon: <img src={Gangwon} width="20" height="20" style={{marginRight: "20px"}} />,
+    icon: <img src={Gangwon} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -253,7 +259,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '제주도',
     route: '/Jeju',
-	icon: <img src={Jeju} width="20" height="20" style={{marginRight: "20px"}} />,
+    icon: <img src={Jeju} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',

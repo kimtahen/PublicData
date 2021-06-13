@@ -40,6 +40,8 @@ const User = React.lazy(() => import('./views/users/User'));
 
 const Test = React.lazy(() => import('./views/test/Test'));
 const Videos = React.lazy(() => import('./views/test/Videos'));
+const Intro = React.lazy(() => import('./views/test/Intro'));
+
 
 const Seocho = React.lazy(() => import('./views/camps/Seocho'));
 const Haeundae = React.lazy(() => import('./views/camps/Haeundae'));
@@ -114,7 +116,9 @@ const routes = [
   { path: '/users/:id', exact: true, name: 'User Details', component: User },
 
   { path: '/test', exact: true, name: 'TestPage', component: Test },
-  { path: '/test/', name: 'Videos', component: Videos },
+  { path: '/test/Videos', name: 'Videos', component: Videos },
+  { path: '/test/Intro', name: 'Intro', component: Intro },
+
 
   { path: '/camps/Seocho', name: 'Seocho', component: Seocho },
   { path: '/camps/Haeundae', name: 'Haeundae', component: Haeundae },
