@@ -16,6 +16,8 @@ const changeState = (state = initialState, { type, ...rest }) => {
       return {...state, ...rest}
     case 'set_lastAccessSucceed':
       return {...state, ...rest}
+    case 'set_rating':
+      return {...state, ...rest}
     default:
       return state
   }
