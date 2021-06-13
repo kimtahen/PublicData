@@ -80,7 +80,7 @@ const Daedeok = () => {
 
       <Map loc={`대전광역시 대덕구 장동로 111`} />
 
-      <Board target={`board10`} />
+      <Board target={`board2`} name="대전대덕구예비군훈련장게시판" />
 
     </>
   )

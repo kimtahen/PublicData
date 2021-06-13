@@ -52,7 +52,7 @@ const Jeju = () => {
               <CImg
                 src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=bcadbb20-b29d-11e5-ae7d-00000b022570&fileSn=20160104134832"
                 fluid
-	  			style={{width: '100%'}}
+                style={{ width: '100%' }}
                 className="mb-2"
               />
             </CCardBody>
@@ -81,7 +81,7 @@ const Jeju = () => {
 
       <Map loc={`제주특별자치도 제주시 종천길 60`} />
 
-      <Board target={`board24`} />
+      <Board target={`board12`} name="제주시예비군훈련장게시판" />
 
     </>
   )

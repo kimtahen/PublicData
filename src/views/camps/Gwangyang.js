@@ -80,7 +80,7 @@ const Gwangyang = () => {
 
       <Map loc={`전라남도 광양시 조양길 47-20`} />
 
-      <Board target={`board21`} />
+      <Board target={`board8`} name="전라도광양예비군훈련장게시판" />
 
     </>
   )

@@ -80,7 +80,7 @@ const Seogwipo = () => {
 
       <Map loc={`제주특별자치도 서귀포시 인정오름로 144`} />
 
-      <Board target={`board25`} />
+      <Board target={`board21`} name="제주도서귀포예비군훈련장게시판" />
 
     </>
   )

@@ -80,7 +80,7 @@ const Buk = () => {
 
       <Map loc={`대구광역시 북구 구리로 183-35`} />
 
-      <Board target={`board5`} />
+      <Board target={`board1`} name="대구북구예비군훈련장게시판" />
 
     </>
   )

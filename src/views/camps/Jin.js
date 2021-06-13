@@ -79,7 +79,7 @@ const Jin = () => {
 
       <Map loc={`부산광역시 부산진구 백양대로320번길 99`} />
 
-      <Board target={`board3`} />
+      <Board target={`board13`} name="부산진구예비군훈련장게시판" />
 
     </>
   )

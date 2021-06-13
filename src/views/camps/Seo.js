@@ -81,7 +81,7 @@ const Seo = () => {
 
       <Map loc={`인천광역시 계양구 둑실동 252`} />
 
-      <Board target={`board7`} />
+      <Board target={`board19`} name="인천서구예비군훈련장게시판" />
 
     </>
   )

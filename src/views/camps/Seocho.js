@@ -71,7 +71,7 @@ const Seocho = () => {
 
       <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
 
-      <Board target={`board1`} />
+      <Board target={`board20`} name="서초과학화예비군훈련장게시판" />
 
     </>
   )

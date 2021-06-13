@@ -80,7 +80,7 @@ const Gimpo = () => {
 
       <Map loc={`경기도 김포시 군하로 123`} />
 
-      <Board target={`board14`} />
+      <Board target={`board5`} name="경기도김포예비군훈련장게시판" />
 
     </>
   )

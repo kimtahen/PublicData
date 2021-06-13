@@ -80,7 +80,7 @@ const Pohang = () => {
 
       <Map loc={`경상북도 포항시 남구 도구길 33`} />
 
-      <Board target={`board23`} />
+      <Board target={`board17`} name="경상도포항예비군훈련장게시판" />
 
     </>
   )

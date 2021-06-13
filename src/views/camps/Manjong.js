@@ -98,7 +98,7 @@ const Manjong = () => {
 
       <Map loc={`강원도 원주시 상만종길 81-6`} />
 
-      <Board target={`board16`} />
+      <Board target={`board14`} name="강원도만종예비군훈련장게시판" />
 
     </>
   )
