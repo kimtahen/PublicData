@@ -13,7 +13,7 @@ import {
 } from '@coreui/react'
 import { DocsLink } from 'src/reusable'
 
-const Intro = () => {
+const Training = () => {
 
     return (
         <>
@@ -25,7 +25,7 @@ const Intro = () => {
             </CCardHeader>
                         <CCardBody>
                             <CEmbed>
-                                <CEmbedItem src="https://www.youtube.com/embed/zChVMZUi4XM" />
+                                <CEmbedItem src="https://m.blog.naver.com/PostList.naver?blogId=mnd9090" />
                             </CEmbed>
                         </CCardBody>
                     </CCard>
@@ -35,4 +35,4 @@ const Intro = () => {
     )
 }
 
-export default Intro
+export default Training

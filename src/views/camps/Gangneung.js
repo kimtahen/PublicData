@@ -67,7 +67,7 @@ const Gangneung = () => {
 
       <Map loc={`강원도 강릉시 금평로(구정면) 314-38`} />
 
-      <Board target={`board17`} />
+      <Board target={`board4`} name="강원도강릉예비군훈련장게시판" />
 
     </>
   )

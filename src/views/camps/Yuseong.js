@@ -80,7 +80,7 @@ const Yuseong = () => {
 
       <Map loc={`대전광역시 유성구 하기로143번길 84`} />
 
-      <Board target={`board9`} />
+      <Board target={`board24`} name="대전유성구예비군훈련장게시판" />
 
     </>
   )

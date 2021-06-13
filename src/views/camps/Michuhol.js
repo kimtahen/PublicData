@@ -49,7 +49,7 @@ const Michuhol = () => {
             <CCardBody>
               <CImg
                 src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=e9d55050-c544-11da-889b-000001010d15&fileSn=20120620133107"
-	  			style={{width: '100%'}}
+                style={{ width: '100%' }}
                 fluid
                 className="mb-2"
               />
@@ -79,7 +79,7 @@ const Michuhol = () => {
 
       <Map loc={`인천광역시 미추홀구 주승로 152`} />
 
-      <Board target={`board6`} />
+      <Board target={`board15`} name="인천미추홀구예비군훈련장게시판" />
 
     </>
   )

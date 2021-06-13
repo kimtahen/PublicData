@@ -2,6 +2,7 @@ import React from 'react';
 const Home = React.lazy(() => import('./views/dashboard/Dashboard'));
 const Test = React.lazy(() => import('./views/test/Test'));
 const Intro = React.lazy(() => import('./views/test/Intro'));
+const Training = React.lazy(() => import('./views/test/Training'));
 
 const Seocho = React.lazy(() => import('./views/camps/Seocho'));
 const Haeundae = React.lazy(() => import('./views/camps/Haeundae'));
@@ -19,7 +20,6 @@ const Ulju = React.lazy(() => import('./views/camps/Ulju'));
 const Sejong = React.lazy(() => import('./views/camps/Sejong'));
 const Ilsan = React.lazy(() => import('./views/camps/Ilsan'));
 const Gimpo = React.lazy(() => import('./views/camps/Gimpo'));
-const Hogae = React.lazy(() => import('./views/camps/Hogae'));
 
 const Manjong = React.lazy(() => import('./views/camps/Manjong'));
 const Gangneung = React.lazy(() => import('./views/camps/Gangneung'));
@@ -38,6 +38,8 @@ const routes = [
   { path: '/home', name: 'Home', component: Home },
   { path: '/test', exact: true, name: 'TestPage', component: Test },
   { path: '/test/Intro', name: 'Intro', component: Intro },
+  { path: '/test/Training', name: 'Training', component: Training },
+
 
   { path: '/camps/Seocho', name: 'Seocho', component: Seocho },
   { path: '/camps/Haeundae', name: 'Haeundae', component: Haeundae },
@@ -55,7 +57,6 @@ const routes = [
   { path: '/camps/Sejong', name: 'Sejong', component: Sejong },
   { path: '/camps/Ilsan', name: 'Ilsan', component: Ilsan },
   { path: '/camps/Gimpo', name: 'Gimpo', component: Gimpo },
-  { path: '/camps/Hogae', name: 'Hogae', component: Hogae },
 
   { path: '/camps/Manjong', name: 'Manjong', component: Manjong },
   { path: '/camps/Gangneung', name: 'Gangneung', component: Gangneung },

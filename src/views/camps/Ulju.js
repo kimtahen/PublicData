@@ -80,7 +80,7 @@ const Ulju = () => {
 
       <Map loc={`울산 울주군 언양읍 반천리 곰재길 229길`} />
 
-      <Board target={`board11`} />
+      <Board target={`board22`} name="울산울주군예비군훈련장게시판" />
 
     </>
   )

@@ -80,7 +80,7 @@ const Yangsuri = () => {
 
       <Map loc={`충청북도 옥천군 마암로 125-12`} />
 
-      <Board target={`board18`} />
+      <Board target={`board23`} name="충청도양수리예비군훈련장게시판" />
 
     </>
   )

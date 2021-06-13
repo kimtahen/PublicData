@@ -80,7 +80,7 @@ const Nonsan = () => {
 
       <Map loc={`충청남도 논산시 연무로 53-16`} />
 
-      <Board target={`board19`} />
+      <Board target={`board16`} name="충청도논산예비군훈련장게시판" />
 
     </>
   )

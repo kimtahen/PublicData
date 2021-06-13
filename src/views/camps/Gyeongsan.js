@@ -80,7 +80,7 @@ const Gyeongsan = () => {
 
       <Map loc={`경상북도 경산시 금박로 143`} />
 
-      <Board target={`board22`} />
+      <Board target={`board9`} name="경상도경산예비군훈련장게시판" />
 
     </>
   )

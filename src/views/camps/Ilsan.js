@@ -80,7 +80,7 @@ const Ilsan = () => {
 
       <Map loc={`경기도 고양시 일산서구 덕이로 104-36`} />
 
-      <Board target={`board13`} />
+      <Board target={`board11`} name="경기도일산예비군훈련장게시판" />
 
     </>
   )

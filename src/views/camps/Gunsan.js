@@ -80,7 +80,7 @@ const Gunsan = () => {
 
       <Map loc={`전라북도 군산시 광월길 89`} />
 
-      <Board target={`board20`} />
+      <Board target={`board6`} name="전라도군산예비군훈련장게시판" />
 
     </>
   )

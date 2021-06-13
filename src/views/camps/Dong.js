@@ -80,7 +80,7 @@ const Dong = () => {
 
       <Map loc={`대구광역시 동구 팔공로 1421`} />
 
-      <Board target={`board4`} />
+      <Board target={`board3`} name="대구동구예비군훈련장게시판" />
 
     </>
   )

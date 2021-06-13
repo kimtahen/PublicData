@@ -72,7 +72,7 @@ const Haeundae = () => {
 
       <Map loc={`부산광역시 해운대구 백동길 43`} />
 
-      <Board target={`board2`} />
+      <Board target={`board10`} name="부산해운대예비군훈련장게시판" />
 
     </>
   )

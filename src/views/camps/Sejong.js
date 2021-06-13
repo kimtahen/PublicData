@@ -80,7 +80,7 @@ const Sejong = () => {
 
       <Map loc={`세종특별자치시 봉산로 345`} />
 
-      <Board target={`board12`} />
+      <Board target={`board18`} name="세종시예비군훈련장게시판" />
 
     </>
   )

@@ -80,7 +80,7 @@ const Gwangsan = () => {
 
       <Map loc={`광주광역시 광산구 창교길 19`} />
 
-      <Board target={`board8`} />
+      <Board target={`board7`} name="광주광산구예비군훈련장게시판" />
 
     </>
   )

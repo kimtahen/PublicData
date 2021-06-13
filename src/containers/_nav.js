@@ -29,7 +29,13 @@ const _nav = [
     _tag: 'CSidebarNavItem',
     name: '소개',
     to: '/test/Intro',
-    icon: <CIcon name="cilHome" customClasses="c-sidebar-nav-icon" />,
+    icon: <CIcon name="cil-info" customClasses="c-sidebar-nav-icon" />,
+  },
+  {
+    _tag: 'CSidebarNavItem',
+    name: '교육훈련',
+    to: '/test/Training',
+    icon: <CIcon name="cilTarget" customClasses="c-sidebar-nav-icon" />,
   },
   {
     _tag: 'CSidebarNavTitle',
@@ -175,11 +181,6 @@ const _nav = [
         _tag: 'CSidebarNavItem',
         name: '김포 예비군훈련장',
         to: '/camps/Gimpo',
-      },
-      {
-        _tag: 'CSidebarNavItem',
-        name: '호계 예비군훈련장',
-        to: '/camps/Hogae',
       }
     ],
   },
