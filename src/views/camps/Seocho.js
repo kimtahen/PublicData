@@ -19,7 +19,7 @@ const Seocho = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol xl="7">
           <CCard>
             <CCardHeader>
               서초과학화예비군훈련장
@@ -31,7 +31,6 @@ const Seocho = () => {
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
 
       {/* <CRow>
 				<CCol>
@@ -50,8 +49,7 @@ const Seocho = () => {
 				</CCol>
 			</CRow> */}
 
-      <CRow>
-        <CCol>
+        <CCol xl="5">
           <CCard>
             <CCardHeader>
               정보

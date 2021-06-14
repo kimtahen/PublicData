@@ -227,15 +227,15 @@ return (
 
 	<CRow>
 	<CCol>
-	<CCard color="info">
+	<CCard color="white">
 	<CCardHeader>
-	{name}
+	<h1 style={{marginBottom: 0}}>{name}</h1>
 	</CCardHeader>
 	<CCardBody>
 	<CRow>
 	<CCol xs="12" lg="4">
 	{/* Form */}
-		<CCard color={`dark`} className="text-white text-center" style={{marginBottom: 0, }}>
+		<CCard color={`white`} className="text-white text-center" style={{marginBottom: 0, }}>
 		<CCardBody>
 		  <CForm action="" method="" className="form-horizontal" >
 			<CFormGroup row>
@@ -269,7 +269,7 @@ return (
 			</CFormGroup>
 		  </CForm>
 		</CCardBody>
-		<CCardFooter>
+		<CCardFooter style={{padding: '5px 0'}}>
 		  <CButton type="submit" onClick={()=>{handleSubmit();}} size="sm" color="dark">등록</CButton>
 		</CCardFooter>
 		</CCard>
@@ -282,7 +282,6 @@ return (
               items={boardData}
               fields={fields}
               columnFilter
-              itemsPerPageSelect
               itemsPerPage={10}
               pagination
               hover
