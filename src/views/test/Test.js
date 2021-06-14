@@ -11,7 +11,7 @@ const Test = () => {
     return(
         <>
 		<Board target={`board20`} />
-		<Rating target={'board1'}/>
+		<Rating target={'board20'}/>
 		<Map loc={`서울특별시 서초구 신흥말길 79-39`}/>
 		<CRow>
 			<CCol>

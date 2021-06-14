@@ -68,7 +68,7 @@ const Rating = ({target}) =>{
 			<CCol>
 				<CCard color="white">
 					<CCardHeader><h1 style={{marginBottom: 0}}>Rating</h1></CCardHeader>
-					<CCardBody className='text-center'>
+					<CCardBody> 
 					<div style={{visibility: 'hidden', transition: '3s'}} ref={visRef}>
 					<CWidgetProgress color={colorPicker(ratingData.rating)} inverse  value={ratingData.rating*20} header={`${ratingData.rating} points`} footer={`${ratingData.vote} people voted`} style={{margin: 0,height: '100%'}}/>
 					</div>
