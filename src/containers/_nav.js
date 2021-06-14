@@ -12,6 +12,13 @@ import Jeju from '../customicon/Jeju.svg'
 import Sejong from '../customicon/Sejong.svg'
 import Ulsan from '../customicon/Ulsan.svg'
 import Daegu from '../customicon/Daegu.svg'
+import ChungcheongNorth from '../customicon/ChungcheongNorth.svg'
+import ChungcheongSouth from '../customicon/ChungcheongSouth.svg'
+import GyeongsangNorth from '../customicon/GyeongsangNorth.svg'
+import GyeongsangSouth from '../customicon/GyeongsangSouth.svg'
+import JeollaNorth from '../customicon/JeollaNorth.svg'
+import JeollaSouth from '../customicon/JeollaSouth.svg'
+
 const _nav = [
   {
     _tag: 'CSidebarNavItem',
@@ -210,7 +217,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '충청북도',
     route: '/ChungcheongNorth',
-    icon: 'cil-cursor',
+    icon: <img src={ChungcheongNorth} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -223,7 +230,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '충청남도',
     route: '/ChungcheongSouth',
-    icon: 'cil-cursor',
+    icon: <img src={ChungcheongSouth} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -236,7 +243,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '전라북도',
     route: '/JeollaNorth',
-    icon: 'cil-cursor',
+    icon: <img src={JeollaNorth} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -249,7 +256,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '전라남도',
     route: '/JeollaSouth',
-    icon: 'cil-cursor',
+    icon: <img src={JeollaSouth} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -262,7 +269,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '경상북도',
     route: '/GyeongsangNorth',
-    icon: 'cil-cursor',
+    icon: <img src={GyeongsangNorth} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -280,7 +287,7 @@ const _nav = [
     _tag: 'CSidebarNavDropdown',
     name: '경상남도',
     route: '/GyeongsangSouth',
-    icon: 'cil-cursor',
+    icon: <img src={GyeongsangSouth} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
