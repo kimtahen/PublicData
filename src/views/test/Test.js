@@ -10,6 +10,7 @@ const Test = () => {
 	const isLoading = useSelector(state => state.isLoading);
     return(
         <>
+		<Board target={`board20`} />
 		<Rating target={'board1'}/>
 		<Map loc={`서울특별시 서초구 신흥말길 79-39`}/>
 		<CRow>
@@ -29,7 +30,6 @@ const Test = () => {
 					</CCard>
 				</CCol>
 			</CRow>
-			<Board target={`board20`} />
 		</>
 	)
 }

@@ -35,6 +35,17 @@ const Board = ({target, name}) => {
     const loading = useSelector(state=> state.isLoading);
     const boardData = useSelector(state => state.curBoardData);
     
+	//visibility set
+	const visRef = useRef()	
+	const isInitialMount = useRef(true);
+	useEffect(()=>{
+		if(isInitialMount.current){
+			isInitialMount.current = false;
+		}else{
+			visRef.current.style.visibility = loading ? 'hidden' : 'visible';
+		}
+	},[loading])
+
     //functions
     const fetch = async () => {
         dispatch({type: 'set_loading', isLoading: true});
@@ -232,6 +243,7 @@ return (
 	<h1 style={{marginBottom: 0}}>{name}</h1>
 	</CCardHeader>
 	<CCardBody>
+	<div style={{visibility: 'hidden', transition: '0.5s'}} ref={visRef}>
 	<CRow>
 	<CCol xs="12" lg="4">
 	{/* Form */}
@@ -326,6 +338,7 @@ return (
           </CCard>
         </CCol>
         </CRow>
+		</div>
 		</CCardBody>
 		</CCard>
 		</CCol>
