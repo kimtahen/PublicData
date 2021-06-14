@@ -32,6 +32,7 @@ const Dashboard = () => {
 	  	<CCol>
               <CJumbotron className="border">
                 <h1 className="display-3">예브리타임에 <br/> 오신 걸 환영합니다!</h1>
+	  			
                 <p className="lead">예브리타임은 여러분이 예비군에 관한 정보를 얻고, 자유롭게 의견을 나눌 수 있는 공간입니다.</p>
                 <hr className="my-2" />
                 <p>지금 바로 예비군 훈련장을 둘러보세요!</p>

@@ -29,13 +29,17 @@ const _nav = [
     _tag: 'CSidebarNavItem',
     name: '소개',
     to: '/test/Intro',
-    icon: <CIcon name="cil-info" customClasses="c-sidebar-nav-icon" />,
+    icon: <CIcon name="cilInfo" customClasses="c-sidebar-nav-icon" />,
   },
   {
     _tag: 'CSidebarNavItem',
     name: '교육훈련',
     to: '/test/Training',
     icon: <CIcon name="cilTarget" customClasses="c-sidebar-nav-icon" />,
+  },
+  {
+    _tag: 'CSidebarNavTitle',
+    _children: ['Introduction']
   },
   {
     _tag: 'CSidebarNavTitle',

@@ -4,6 +4,10 @@ const initialState = {
   sidebarShow: 'responsive',
   isLoading: false,
   isLastAccessSucceed: true,
+  ratingData: {
+	  rating: undefined,
+	  vote: undefined
+  }
 }
 
 const changeState = (state = initialState, { type, ...rest }) => {
@@ -15,6 +19,8 @@ const changeState = (state = initialState, { type, ...rest }) => {
     case 'set_boardData':
       return {...state, ...rest}
     case 'set_lastAccessSucceed':
+      return {...state, ...rest}
+    case 'set_rating':
       return {...state, ...rest}
     default:
       return state
