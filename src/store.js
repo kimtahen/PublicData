@@ -4,6 +4,10 @@ const initialState = {
   sidebarShow: 'responsive',
   isLoading: false,
   isLastAccessSucceed: true,
+  ratingData: {
+	  rating: undefined,
+	  vote: undefined
+  }
 }
 
 const changeState = (state = initialState, { type, ...rest }) => {

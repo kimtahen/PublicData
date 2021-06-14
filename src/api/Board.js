@@ -229,7 +229,7 @@ return (
 	<CCol>
 	<CCard color="white">
 	<CCardHeader>
-	<h1 class='display-header' style={{marginBottom: 0}}>{name}</h1>
+	<h1 style={{marginBottom: 0}}>{name}</h1>
 	</CCardHeader>
 	<CCardBody>
 	<CRow>
