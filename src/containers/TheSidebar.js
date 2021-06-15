@@ -18,6 +18,8 @@ import CIcon from '@coreui/icons-react'
 // sidebar nav config
 import navigation from './_nav'
 
+import GyeongsangSouth from '../customicon/yeb.jpg'
+
 const TheSidebar = () => {
   const dispatch = useDispatch()
   const show = useSelector(state => state.sidebarShow)
@@ -28,6 +30,7 @@ const TheSidebar = () => {
       colorScheme={`dark`}
     >
       <CSidebarBrand className="d-md-down-none" to="/">
+        <img src={GyeongsangSouth} width="20" height="20" style={{ marginRight: "10px" }} />
         <div className="c-sidebar-brand-full">어제의 용사들</div>
         <div className="c-sidebar-brand-minimized">yeb</div>
       </CSidebarBrand>
