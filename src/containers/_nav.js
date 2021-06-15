@@ -12,6 +12,13 @@ import Jeju from '../customicon/Jeju.svg'
 import Sejong from '../customicon/Sejong.svg'
 import Ulsan from '../customicon/Ulsan.svg'
 import Daegu from '../customicon/Daegu.svg'
+import ChungcheongNorth from '../customicon/ChungcheongNorth.svg'
+import ChungcheongSouth from '../customicon/ChungcheongSouth.svg'
+import GyeongsangNorth from '../customicon/GyeongsangNorth.svg'
+import GyeongsangSouth from '../customicon/GyeongsangSouth.svg'
+import JeollaNorth from '../customicon/JeollaNorth.svg'
+import JeollaSouth from '../customicon/JeollaSouth.svg'
+
 const _nav = [
   {
     _tag: 'CSidebarNavItem',
@@ -208,15 +215,23 @@ const _nav = [
   },
   {
     _tag: 'CSidebarNavDropdown',
-    name: '충청도',
-    route: '/Chungcheong',
-    icon: 'cil-cursor',
+    name: '충청북도',
+    route: '/ChungcheongNorth',
+    icon: <img src={ChungcheongNorth} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '양수리 예비군훈련장',
         to: '/camps/Yangsuri',
-      },
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '충청남도',
+    route: '/ChungcheongSouth',
+    icon: <img src={ChungcheongSouth} width="20" height="20" style={{ marginRight: "20px" }} />,
+    _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '논산/계룡 예비군훈련장',
@@ -226,15 +241,23 @@ const _nav = [
   },
   {
     _tag: 'CSidebarNavDropdown',
-    name: '전라도',
-    route: '/Jeolla',
-    icon: 'cil-cursor',
+    name: '전라북도',
+    route: '/JeollaNorth',
+    icon: <img src={JeollaNorth} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '군산 예비군훈련장',
         to: '/camps/Gunsan',
-      },
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '전라남도',
+    route: '/JeollaSouth',
+    icon: <img src={JeollaSouth} width="20" height="20" style={{ marginRight: "20px" }} />,
+    _children: [
       {
         _tag: 'CSidebarNavItem',
         name: '광양 예비군훈련장',
@@ -244,9 +267,9 @@ const _nav = [
   },
   {
     _tag: 'CSidebarNavDropdown',
-    name: '경상도',
-    route: '/Gyeongsang',
-    icon: 'cil-cursor',
+    name: '경상북도',
+    route: '/GyeongsangNorth',
+    icon: <img src={GyeongsangNorth} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
       {
         _tag: 'CSidebarNavItem',
@@ -257,6 +280,19 @@ const _nav = [
         _tag: 'CSidebarNavItem',
         name: '포항 예비군훈련장',
         to: '/camps/Pohang',
+      }
+    ],
+  },
+  {
+    _tag: 'CSidebarNavDropdown',
+    name: '경상남도',
+    route: '/GyeongsangSouth',
+    icon: <img src={GyeongsangSouth} width="20" height="20" style={{ marginRight: "20px" }} />,
+    _children: [
+      {
+        _tag: 'CSidebarNavItem',
+        name: '김해 예비군훈련장',
+        to: '/camps/Gimhae',
       }
     ],
   },
