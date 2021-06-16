@@ -32,7 +32,7 @@ const Gangneung = () => {
           </CCard>
         </CCol>
 
-        <CCol xl="6">
+        <CCol>
           <CCard>
             <CCardHeader>
               정보

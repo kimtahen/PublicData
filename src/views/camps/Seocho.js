@@ -32,7 +32,7 @@ const Seocho = () => {
           </CCard>
         </CCol>
 
-        <CCol xl="6">
+        <CCol>
           <CCard>
             <CCardHeader>
               정보

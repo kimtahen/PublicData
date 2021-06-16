@@ -58,7 +58,7 @@ const Yuseong = () => {
       </CRow>
 
       <CRow>
-        <CCol xl="6">
+        <CCol>
           <CCard>
             <CCardHeader>
               정보
