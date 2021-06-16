@@ -20,7 +20,7 @@ const Manjong = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               강원도만종예비군훈련장
@@ -32,10 +32,8 @@ const Manjong = () => {
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               강원도만종예비군훈련장
@@ -43,16 +41,16 @@ const Manjong = () => {
             <CCardBody>
               <CLink
                 href="http://chosunnews.co.kr/news/view.php?no=7279"
-                target="_blank"
+                target="_blank" style={{ width: "100%" }}
               >
                 만종예비군훈련장 영상모의사격장 시민체험행사 참가자 모집
-		          </CLink>
+              </CLink>
               <br />
 
               <CImg
                 src="http://chosunnews.co.kr/data/tmp/1909/20190904160943_qcyduvrl.jpg"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
@@ -61,7 +59,7 @@ const Manjong = () => {
       </CRow>
 
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               강원도만종예비군훈련장
@@ -70,7 +68,7 @@ const Manjong = () => {
               <CImg
                 src=""
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
@@ -78,19 +76,19 @@ const Manjong = () => {
       </CRow>
 
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
+
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 강원도 원주시 상만종길(호저면) 81-6
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 : 033-762-7113
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

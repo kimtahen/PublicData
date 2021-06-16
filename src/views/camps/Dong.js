@@ -17,7 +17,7 @@ const Dong = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               대구동구예비군훈련장
@@ -25,25 +25,24 @@ const Dong = () => {
             <CCardBody>
               <CLink
                 href="https://www.yeongnam.com/web/view.php?key=20200622010003255"
-                target="_blank"
+                target="_blank" style={{ width: "100%" }}
               >
                 대구 동구여성예비군 "내 고장은 내가 지킨다"
-		          </CLink>
+              </CLink>
               <br />
 
               <CImg
                 src="https://www.yeongnam.com/mnt/file/202006/2020062201000801500032551.jpg"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
+                style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
 
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               대구동구예비군훈련장
@@ -52,7 +51,8 @@ const Dong = () => {
               <CImg
                 src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
+                style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
@@ -60,19 +60,18 @@ const Dong = () => {
       </CRow>
 
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 대구광역시 동구 팔공로(능성동) 1421
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 :
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

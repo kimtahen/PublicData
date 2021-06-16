@@ -17,7 +17,7 @@ const Ilsan = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               경기도일산예비군훈련장
@@ -25,25 +25,23 @@ const Ilsan = () => {
             <CCardBody>
               <CLink
                 href="https://news.joins.com/article/17257601"
-                target="_blank"
+                target="_blank" style={{ width: "100%" }}
               >
                 적을 결박하라
-		          </CLink>
+              </CLink>
               <br />
 
               <CImg
                 src="https://pds.joins.com/news/component/newsis/201503/02/NISI20150302_0010677041_web.jpg"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
 
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               경기도일산예비군훈련장
@@ -52,7 +50,7 @@ const Ilsan = () => {
               <CImg
                 src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=c45357d0-ca7d-11da-b44f-000001010d15&fileSn=20170818185157"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
@@ -60,19 +58,19 @@ const Ilsan = () => {
       </CRow>
 
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
+
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 경기도 고양시 일산서구 덕이로(덕이동) 104-36
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 : 031-864-9742
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

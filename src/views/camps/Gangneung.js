@@ -17,20 +17,7 @@ const Gangneung = () => {
   return (
     <>
       <CRow>
-        <CCol>
-          <CCard>
-            <CCardHeader>
-              강원도강릉예비군훈련장
-            </CCardHeader>
-            <CCardBody>
-            </CCardBody>
-          </CCard>
-
-        </CCol>
-      </CRow>
-
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               강원도강릉예비군훈련장
@@ -39,27 +26,25 @@ const Gangneung = () => {
               <CImg
                 // src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
+
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 강원도 강릉시 금평로(구정면) 314-38
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 :
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

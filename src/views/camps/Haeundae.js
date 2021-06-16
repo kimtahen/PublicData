@@ -18,7 +18,7 @@ const Haeundae = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               부산해운대예비군훈련장
@@ -27,15 +27,13 @@ const Haeundae = () => {
               <CImg
               // src="https://council.busanjin.go.kr/UPDIR/photo/middle/photo_00001370.jpg"
               // fluid
-              // className="mb-2"
+              //className="mb-2" style={{width : "100%"}}
               />
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               부산해운대예비군훈련장
@@ -44,7 +42,7 @@ const Haeundae = () => {
               <CImg
               // src="https://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=b385be40-cabc-11da-bc12-000001010d15&fileSn=20120615085939"
               // fluid
-              // className="mb-2"
+              //className="mb-2" style={{width : "100%"}}
               />
             </CCardBody>
           </CCard>
@@ -52,19 +50,19 @@ const Haeundae = () => {
       </CRow>
 
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
+
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 부산광역시 해운대구 백동길(송정동) 43
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 : 051-704-1113
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

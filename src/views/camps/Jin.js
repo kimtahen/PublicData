@@ -17,7 +17,7 @@ const Jin = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               부산진구예비군훈련장
@@ -25,24 +25,22 @@ const Jin = () => {
             <CCardBody>
               <CLink
                 href="https://council.busanjin.go.kr/content/activity/photo.html?gtid=photo&pg=vv&sid=&page=87&fidx=3605&opt=&sword="
-                target="_blank"
+                target="_blank" style={{ width: "100%" }}
               >
                 개금동 예비군훈련장 현장확인
-		          </CLink>
+              </CLink>
               <br />
 
               <CImg
                 src="https://council.busanjin.go.kr/UPDIR/photo/middle/photo_00001370.jpg"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               부산진구예비군훈련장
@@ -51,7 +49,7 @@ const Jin = () => {
               <CImg
                 src="https://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=b385be40-cabc-11da-bc12-000001010d15&fileSn=20120615085939"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
@@ -59,19 +57,19 @@ const Jin = () => {
       </CRow>
 
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
+
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 부산광역시 부산진구 백양대로320번길(개금동) 99
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 :
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

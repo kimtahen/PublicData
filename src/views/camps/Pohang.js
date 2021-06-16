@@ -17,7 +17,7 @@ const Pohang = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               경상도포항예비군훈련장
@@ -25,25 +25,23 @@ const Pohang = () => {
             <CCardBody>
               <CLink
                 href="https://www.donga.com/news/Society/article/all/20200105/99084761/1"
-                target="_blank"
+                target="_blank" style={{ width: "100%" }}
               >
                 예비군 동원훈련 ‘1년 단축’ 앞둔 軍, 동원 필요 규모 파악중
-		          </CLink>
+              </CLink>
               <br />
 
               <CImg
                 src="https://dimg.donga.com/wps/NEWS/IMAGE/2020/01/05/99084737.2.jpg"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
 
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               경상도포항예비군훈련장
@@ -52,7 +50,7 @@ const Pohang = () => {
               {/* <CImg
                 src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
                 fluid
-                className="mb-2"
+               className="mb-2" style={{width : "100%"}}
               /> */}
             </CCardBody>
           </CCard>
@@ -60,19 +58,19 @@ const Pohang = () => {
       </CRow>
 
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
+
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 경상북도 포항시 남구 도구길(동해면) 33
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 :
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

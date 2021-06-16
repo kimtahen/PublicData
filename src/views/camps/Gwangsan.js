@@ -17,7 +17,7 @@ const Gwangsan = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               광주광산구예비군훈련장
@@ -25,25 +25,23 @@ const Gwangsan = () => {
             <CCardBody>
               <CLink
                 href="http://www.igj.co.kr/news/articleView.html?idxno=24324"
-                target="_blank"
+                target="_blank" style={{ width: "100%" }}
               >
                 2012년 예비군훈련 더 쾌적하게, 더 성과 있게
-		          </CLink>
+              </CLink>
               <br />
 
               <CImg
                 src="http://www.igj.co.kr/news/photo/201203/24324_44609_343.jpg"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
 
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               광주광산구예비군훈련장
@@ -52,7 +50,7 @@ const Gwangsan = () => {
               <CImg
                 src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=81fe2100-ce72-11da-8eaa-000001010d15&fileSn=20140319163711"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
@@ -60,19 +58,19 @@ const Gwangsan = () => {
       </CRow>
 
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
+
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 광주광역시 광산구 창교길(본덕동) 19 광산 예비군훈련장
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 : 062-943-9113
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

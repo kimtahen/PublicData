@@ -17,7 +17,7 @@ const Gyeongsan = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               경상도경산예비군훈련장
@@ -25,25 +25,23 @@ const Gyeongsan = () => {
             <CCardBody>
               <CLink
                 href="http://ksinews.co.kr/mobile/view.asp?intNum=1369"
-                target="_blank"
+                target="_blank" style={{ width: "100%" }}
               >
                 경산 예비군 교장 서바이벌훈련장 준공
-		          </CLink>
+              </CLink>
               <br />
 
               <CImg
                 src="http://www.ksinews.co.kr/ArticleUpload/8/2007032817321.jpg"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
 
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               경상도경산예비군훈련장
@@ -52,7 +50,7 @@ const Gyeongsan = () => {
               <CImg
                 src=""
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
@@ -60,19 +58,19 @@ const Gyeongsan = () => {
       </CRow>
 
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
+
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 경상북도 경산시 금박로(자인면) 143
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 : 053-857-6113
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

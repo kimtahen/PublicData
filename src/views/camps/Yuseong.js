@@ -17,7 +17,7 @@ const Yuseong = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               대전유성구예비군훈련장
@@ -25,25 +25,23 @@ const Yuseong = () => {
             <CCardBody>
               <CLink
                 href="https://news.mt.co.kr/mtview.php?no=2015051517198232085"
-                target="_blank"
+                target="_blank" style={{ width: "100%" }}
               >
                 [사진]예비군 훈련 '총구는 안전고리에'
-		          </CLink>
+              </CLink>
               <br />
 
               <CImg
                 src="https://thumb.mt.co.kr/06/2015/05/2015051517198232085_1.jpg/dims/optimize/"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
 
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               대전유성구예비군훈련장
@@ -52,7 +50,7 @@ const Yuseong = () => {
               <CImg
                 src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=88642250-a7f9-11da-bf7c-000001010d15&fileSn=20150420134548"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
@@ -60,19 +58,19 @@ const Yuseong = () => {
       </CRow>
 
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
+
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 대전광역시 유성구 하기로143번길(자운동) 84
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 : 042-824-0259
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

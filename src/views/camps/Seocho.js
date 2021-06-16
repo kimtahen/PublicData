@@ -19,7 +19,7 @@ const Seocho = () => {
   return (
     <>
       <CRow>
-        <CCol xl="7">
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               서초과학화예비군훈련장
@@ -32,36 +32,19 @@ const Seocho = () => {
           </CCard>
         </CCol>
 
-      {/* <CRow>
-				<CCol>
-					<CCard>
-        	  <CCardHeader>
-	            서초과학화예비군훈련장
-            </CCardHeader>
-						<CCardBody>
-	            <CImg
-	              src="https://www.yebigun1.mil.kr/dmobis/NaverMap4.jsp"
-      					fluid
-      					className="mb-2"
-							/>
-						</CCardBody>
-					</CCard>
-				</CCol>
-			</CRow> */}
-
-        <CCol xl="5">
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
+
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 서울특별시 서초구 신흥말길(내곡동) 79-39 서초과학화예비군훈련장(강남, 서초)
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 : 02-576-6637
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

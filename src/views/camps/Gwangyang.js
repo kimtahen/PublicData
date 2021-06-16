@@ -17,7 +17,7 @@ const Gwangyang = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               전라도광양예비군훈련장
@@ -25,25 +25,23 @@ const Gwangyang = () => {
             <CCardBody>
               <CLink
                 href="http://www.gukjenews.com/news/articleView.html?idxno=728455"
-                target="_blank"
+                target="_blank" style={{ width: "100%" }}
               >
                 광양시, 군부대․예비군 지휘관과 방위태세 점검
-		          </CLink>
+              </CLink>
               <br />
 
               <CImg
                 src="https://cdn.gukjenews.com/news/photo/201706/728455_516211_4029.jpg"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
 
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               전라도광양예비군훈련장
@@ -52,7 +50,7 @@ const Gwangyang = () => {
               <CImg
                 src=""
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
@@ -60,19 +58,19 @@ const Gwangyang = () => {
       </CRow>
 
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
+
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 전라남도 광양시 조양길(봉강면) 47-20 7391부대 4대대
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 : 061-763-9569
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

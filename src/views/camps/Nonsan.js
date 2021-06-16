@@ -17,33 +17,7 @@ const Nonsan = () => {
   return (
     <>
       <CRow>
-        <CCol>
-          <CCard>
-            <CCardHeader>
-              충청도논산예비군훈련장
-            </CCardHeader>
-            <CCardBody>
-              {/* <CLink
-                href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
-                target="_blank"
-              >
-                육군 50사단, 예비군훈련 돌입
-		          </CLink>
-              <br />
-
-              <CImg
-                src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
-                fluid
-                className="mb-2"
-              /> */}
-            </CCardBody>
-          </CCard>
-
-        </CCol>
-      </CRow>
-
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               충청도논산예비군훈련장
@@ -52,27 +26,25 @@ const Nonsan = () => {
               <CImg
                 src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=8d12e7a0-c856-11da-89d4-000001010d15&fileSn=20081027092935"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
+
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 충청남도 논산시 연무로(연무읍) 53-16 논산예비군훈련장
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 : 041-742-9852
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>

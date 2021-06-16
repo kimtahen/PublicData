@@ -17,42 +17,42 @@ const Buk = () => {
   return (
     <>
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               대구북구예비군훈련장
             </CCardHeader>
-            <CCardBody>
+            <CCardBody className="text-center">
               <CLink
                 href="https://www.idaegu.co.kr/news/articleView.html?idxno=244017"
                 target="_blank"
               >
                 육군 50사단, 예비군훈련 돌입
-		          </CLink>
+              </CLink>
               <br />
 
               <CImg
                 src="https://www.idaegu.co.kr/news/photo/first/201803/img_244017_1.jpg"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
+                style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
 
         </CCol>
-      </CRow>
 
-      <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               대구북구예비군훈련장
             </CCardHeader>
-            <CCardBody>
+            <CCardBody className="text-center">
               <CImg
                 src="http://www.yebigun1.mil.kr/cmm/fms/getImage.do?atchFileId=f9a06d00-db09-11da-a738-000001010d15&fileSn=20110310152551"
                 fluid
-                className="mb-2"
+                className="mb-2" style={{ width: "100%" }}
+                style={{ width: "100%" }}
               />
             </CCardBody>
           </CCard>
@@ -60,19 +60,18 @@ const Buk = () => {
       </CRow>
 
       <CRow>
-        <CCol>
+        <CCol xl="6">
           <CCard>
             <CCardHeader>
               정보
-    		      <DocsLink name="CCard" />
             </CCardHeader>
             <CCardBody>
               <p className="muted">
                 주소 : 대구광역시 북구 구리로(국우동) 183-35
-  	      	  </p>
+              </p>
               <p className="muted">
                 연락처 : 053-322-5981
-  	      	  </p>
+              </p>
             </CCardBody>
           </CCard>
         </CCol>
