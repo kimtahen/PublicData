@@ -93,7 +93,7 @@ const Rating = ({target}) =>{
 
 	return(
 		<>
-		<CModal show={modal} color={colorPicker(ratingData.rating)} onClose={()=>{setModal(!modal)}}>
+		<CModal show={modal} color={colorPicker(ratingData.rating/ratingData.vote)} onClose={()=>{setModal(!modal)}}>
 			<CModalHeader closeButton>
 				RATE!
 			</CModalHeader>
@@ -117,7 +117,7 @@ const Rating = ({target}) =>{
 					</CCardHeader>
 					<CCardBody> 
 					<div style={{visibility: 'hidden', transition: '3s'}} ref={visRef}>
-					<CWidgetProgress color={colorPicker(ratingData.rating)} inverse  value={ratingData.rating*20} header={`${(ratingData.rating/ratingData.vote).toFixed(2)} points`} footer={`${ratingData.vote} people voted`} style={{margin: 0,height: '100%'}}/>
+					<CWidgetProgress color={colorPicker(ratingData.rating/ratingData.vote)} inverse  value={(ratingData.rating/ratingData.vote)*20} header={`${(ratingData.rating/ratingData.vote).toFixed(2)} points`} footer={`${ratingData.vote} people voted`} style={{margin: 0,height: '100%'}}/>
 					</div>
 					</CCardBody>
 					<CCardFooter className="text-center">
