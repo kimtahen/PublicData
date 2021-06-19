@@ -70,18 +70,19 @@ const Rating = ({ target }) => {
 		setModal(!modal)
 	}
 	const colorPicker = (rating) => {
-		if (rating > 4)
-			return 'primary';
-		if (rating > 3)
+		
+		if (rating >= 4)
 			return 'info';
-		if (rating > 2)
+		if (rating >= 3)
 			return 'success';
-		if (rating > 1)
+		if (rating >= 2)
 			return 'warning';
+		if (rating >= 1)
+			return 'danger';
 		if (rating === undefined)
 			return 'secondary';
 
-		return 'danger'
+		return 'secondary'
 	}
 
 	//modal 
@@ -93,7 +94,7 @@ const Rating = ({ target }) => {
 
 	return (
 		<>
-			<CModal show={modal} color={colorPicker(ratingData.rating)} onClose={() => { setModal(!modal) }}>
+			<CModal show={modal} color={colorPicker(ratingData.rating/ratingData.vote)} onClose={() => { setModal(!modal) }}>
 				<CModalHeader closeButton>
 					Rate!
 				</CModalHeader>
@@ -117,7 +118,7 @@ const Rating = ({ target }) => {
 						</CCardHeader>
 						<CCardBody>
 							<div style={{ visibility: 'hidden', transition: '3s' }} ref={visRef}>
-								<CWidgetProgress color={colorPicker(ratingData.rating)} inverse value={ratingData.rating * 20} header={`${(ratingData.rating / ratingData.vote).toFixed(2)} points`} footer={`${ratingData.vote} people voted`} style={{ margin: 0, height: '100%' }} />
+								<CWidgetProgress color={colorPicker(ratingData.rating/ratingData.vote)} inverse value={(ratingData.rating/ratingData.vote)*20} header={`${(ratingData.rating / ratingData.vote).toFixed(2)} points`} footer={`${ratingData.vote} people voted`} style={{ margin: 0, height: '100%' }} />
 							</div>
 						</CCardBody>
 						<CCardFooter className="text-center">
