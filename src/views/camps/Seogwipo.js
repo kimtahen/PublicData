@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Seogwipo = () => {
   return (
@@ -20,7 +21,7 @@ const Seogwipo = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              제주도서귀포예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>제주도서귀포예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -44,7 +45,7 @@ const Seogwipo = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              제주도서귀포예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>제주도서귀포예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -61,7 +62,7 @@ const Seogwipo = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -77,6 +78,8 @@ const Seogwipo = () => {
       </CRow>
 
       <Map loc={`제주특별자치도 서귀포시 인정오름로 144`} />
+
+      <Rating target={'board21'} />
 
       <Board target={`board21`} name="제주도서귀포예비군훈련장게시판" />
 

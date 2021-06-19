@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Buk = () => {
   return (
@@ -20,7 +21,7 @@ const Buk = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              대구북구예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>대구북구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody className="text-center">
               <CLink
@@ -45,7 +46,7 @@ const Buk = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              대구북구예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>대구북구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody className="text-center">
               <CImg
@@ -63,7 +64,7 @@ const Buk = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
             </CCardHeader>
             <CCardBody>
               <p className="muted">
@@ -78,6 +79,8 @@ const Buk = () => {
       </CRow>
 
       <Map loc={`대구광역시 북구 구리로 183-35`} />
+
+      <Rating target={'board1'} />
 
       <Board target={`board1`} name="대구북구예비군훈련장게시판" />
 

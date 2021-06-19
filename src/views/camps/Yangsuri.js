@@ -14,6 +14,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Yangsuri = () => {
   return (
@@ -22,7 +23,7 @@ const Yangsuri = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              충청도양수리예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>충청도양수리예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -44,7 +45,7 @@ const Yangsuri = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -60,6 +61,8 @@ const Yangsuri = () => {
       </CRow>
 
       <Map loc={`충청북도 옥천군 마암로 125-12`} />
+
+      <Rating target={'board23'} />
 
       <Board target={`board23`} name="충청도양수리예비군훈련장게시판" />
 

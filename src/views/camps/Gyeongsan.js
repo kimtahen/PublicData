@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Gyeongsan = () => {
   return (
@@ -20,7 +21,7 @@ const Gyeongsan = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              경상도경산예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>경상도경산예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -44,7 +45,7 @@ const Gyeongsan = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              경상도경산예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>경상도경산예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -61,7 +62,7 @@ const Gyeongsan = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -77,6 +78,8 @@ const Gyeongsan = () => {
       </CRow>
 
       <Map loc={`경상북도 경산시 금박로 143`} />
+
+      <Rating target={'board9'} />
 
       <Board target={`board9`} name="경상도경산예비군훈련장게시판" />
 

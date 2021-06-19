@@ -14,6 +14,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Michuhol = () => {
   return (
@@ -22,7 +23,7 @@ const Michuhol = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              인천미추홀구예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>인천미추홀구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -42,7 +43,7 @@ const Michuhol = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              인천미추홀구예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>인천미추홀구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -60,7 +61,7 @@ const Michuhol = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -76,6 +77,8 @@ const Michuhol = () => {
       </CRow>
 
       <Map loc={`인천광역시 미추홀구 주승로 152`} />
+
+      <Rating target={'board15'} />
 
       <Board target={`board15`} name="인천미추홀구예비군훈련장게시판" />
 

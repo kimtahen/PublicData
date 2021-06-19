@@ -13,6 +13,7 @@ import {
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Seocho = () => {
 
@@ -22,7 +23,7 @@ const Seocho = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              서초과학화예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>서초과학화예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CEmbed>
@@ -35,7 +36,7 @@ const Seocho = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -51,6 +52,8 @@ const Seocho = () => {
       </CRow>
 
       <Map loc={`서울특별시 서초구 신흥말길 79-39`} />
+
+      <Rating target={'board20'} />
 
       <Board target={`board20`} name="서초과학화예비군훈련장게시판" />
 

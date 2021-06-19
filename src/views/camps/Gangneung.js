@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Gangneung = () => {
   return (
@@ -20,7 +21,7 @@ const Gangneung = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              강원도강릉예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>강원도강릉예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -35,8 +36,7 @@ const Gangneung = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
-
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
             </CCardHeader>
             <CCardBody>
               <p className="muted">
@@ -51,6 +51,8 @@ const Gangneung = () => {
       </CRow>
 
       <Map loc={`강원도 강릉시 금평로(구정면) 314-38`} />
+
+      <Rating target={'board4'} />
 
       <Board target={`board4`} name="강원도강릉예비군훈련장게시판" />
 

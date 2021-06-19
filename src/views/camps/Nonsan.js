@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Nonsan = () => {
   return (
@@ -20,7 +21,7 @@ const Nonsan = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              충청도논산예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>충청도논산예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -35,7 +36,7 @@ const Nonsan = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -51,6 +52,8 @@ const Nonsan = () => {
       </CRow>
 
       <Map loc={`충청남도 논산시 연무로 53-16`} />
+
+      <Rating target={'board16'} />
 
       <Board target={`board16`} name="충청도논산예비군훈련장게시판" />
 

@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Gimpo = () => {
   return (
@@ -20,7 +21,7 @@ const Gimpo = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              경기도김포예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>경기도김포예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -44,7 +45,7 @@ const Gimpo = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              경기도김포예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>경기도김포예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -61,7 +62,7 @@ const Gimpo = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -77,6 +78,8 @@ const Gimpo = () => {
       </CRow>
 
       <Map loc={`경기도 김포시 군하로 123`} />
+
+      <Rating target={'board5'} />
 
       <Board target={`board5`} name="경기도김포예비군훈련장게시판" />
 

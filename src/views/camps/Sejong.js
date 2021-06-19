@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Sejong = () => {
   return (
@@ -20,7 +21,7 @@ const Sejong = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              세종시예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>세종시예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -44,7 +45,7 @@ const Sejong = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -60,6 +61,8 @@ const Sejong = () => {
       </CRow>
 
       <Map loc={`세종특별자치시 봉산로 345`} />
+
+      <Rating target={'board18'} />
 
       <Board target={`board18`} name="세종시예비군훈련장게시판" />
 

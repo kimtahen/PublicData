@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Pohang = () => {
   return (
@@ -20,7 +21,7 @@ const Pohang = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              경상도포항예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>경상도포항예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -44,7 +45,7 @@ const Pohang = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              경상도포항예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>경상도포항예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               {/* <CImg
@@ -61,7 +62,7 @@ const Pohang = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -77,6 +78,8 @@ const Pohang = () => {
       </CRow>
 
       <Map loc={`경상북도 포항시 남구 도구길 33`} />
+
+      <Rating target={'board17'} />
 
       <Board target={`board17`} name="경상도포항예비군훈련장게시판" />
 

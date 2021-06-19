@@ -14,6 +14,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Seo = () => {
   return (
@@ -23,7 +24,7 @@ const Seo = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              인천서구예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>인천서구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -45,7 +46,7 @@ const Seo = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              인천서구예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>인천서구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -62,7 +63,7 @@ const Seo = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -78,6 +79,8 @@ const Seo = () => {
       </CRow>
 
       <Map loc={`인천광역시 계양구 둑실동 252`} />
+
+      <Rating target={'board19'} />
 
       <Board target={`board19`} name="인천서구예비군훈련장게시판" />
 

@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Gwangyang = () => {
   return (
@@ -20,7 +21,7 @@ const Gwangyang = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              전라도광양예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>전라도광양예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -44,7 +45,7 @@ const Gwangyang = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              전라도광양예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>전라도광양예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -61,7 +62,7 @@ const Gwangyang = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -77,6 +78,8 @@ const Gwangyang = () => {
       </CRow>
 
       <Map loc={`전라남도 광양시 조양길 47-20`} />
+
+      <Rating target={'board8'} />
 
       <Board target={`board8`} name="전라도광양예비군훈련장게시판" />
 

@@ -12,6 +12,7 @@ import {
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Haeundae = () => {
 
@@ -21,7 +22,7 @@ const Haeundae = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              부산해운대예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>부산해운대예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -36,7 +37,7 @@ const Haeundae = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              부산해운대예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>부산해운대예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -53,7 +54,7 @@ const Haeundae = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -69,6 +70,8 @@ const Haeundae = () => {
       </CRow>
 
       <Map loc={`부산광역시 해운대구 백동길 43`} />
+
+      <Rating target={'board10'} />
 
       <Board target={`board10`} name="부산해운대예비군훈련장게시판" />
 

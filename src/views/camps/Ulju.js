@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Ulju = () => {
   return (
@@ -20,7 +21,7 @@ const Ulju = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              울산울주군예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>울산울주군예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -44,7 +45,7 @@ const Ulju = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              울산울주군예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>울산울주군예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -61,7 +62,7 @@ const Ulju = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -77,6 +78,8 @@ const Ulju = () => {
       </CRow>
 
       <Map loc={`울산 울주군 언양읍 반천리 곰재길 229길`} />
+
+      <Rating target={'board22'} />
 
       <Board target={`board22`} name="울산울주군예비군훈련장게시판" />
 

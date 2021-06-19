@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Daedeok = () => {
   return (
@@ -20,7 +21,7 @@ const Daedeok = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              대전대덕구예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>대전대덕구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -45,7 +46,7 @@ const Daedeok = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              대전대덕구예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>대전대덕구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -63,7 +64,7 @@ const Daedeok = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
             </CCardHeader>
             <CCardBody>
               <p className="muted">
@@ -78,6 +79,8 @@ const Daedeok = () => {
       </CRow>
 
       <Map loc={`대전광역시 대덕구 장동로 111`} />
+
+      <Rating target={'board2'} />
 
       <Board target={`board2`} name="대전대덕구예비군훈련장게시판" />
 

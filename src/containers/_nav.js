@@ -23,7 +23,7 @@ const _nav = [
   {
     _tag: 'CSidebarNavItem',
     name: 'Test',
-    to: '/test',
+    to: '/info',
     icon: <img src={Seoul} width="20" height="20" style={{ marginRight: "20px" }} />
   },
   {
@@ -33,21 +33,28 @@ const _nav = [
     icon: <CIcon name="cilHome" customClasses="c-sidebar-nav-icon" />,
   },
   {
+    _tag: 'CSidebarNavTitle',
+    _children: ['정보 게시판 ']
+  },
+  {
     _tag: 'CSidebarNavItem',
     name: '소개',
-    to: '/test/Intro',
-    icon: <CIcon name="cilInfo" customClasses="c-sidebar-nav-icon" />,
+    to: '/info/Intro',
+    icon: <CIcon content={freeSet.cilInfo} customClasses="c-sidebar-nav-icon" />,
   },
   {
     _tag: 'CSidebarNavItem',
     name: '교육훈련',
-    to: '/test/Training',
-    icon: <CIcon name="cilTarget" customClasses="c-sidebar-nav-icon" />,
+    to: '/info/Training',
+    icon: <CIcon content={freeSet.cilCompress} customClasses="c-sidebar-nav-icon" />,
   },
   {
-    _tag: 'CSidebarNavTitle',
-    _children: ['Introduction']
+    _tag: 'CSidebarNavItem',
+    name: '자유게시판',
+    to: '/info/Free',
+    icon: <CIcon content={freeSet.cilGroup} customClasses="c-sidebar-nav-icon" />,
   },
+
   {
     _tag: 'CSidebarNavTitle',
     _children: ['훈련장 게시판']

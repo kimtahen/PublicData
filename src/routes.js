@@ -1,8 +1,9 @@
 import React from 'react';
 const Home = React.lazy(() => import('./views/dashboard/Dashboard'));
-const Test = React.lazy(() => import('./views/test/Test'));
-const Intro = React.lazy(() => import('./views/test/Intro'));
-const Training = React.lazy(() => import('./views/test/Training'));
+const Test = React.lazy(() => import('./views/info/Test'));
+const Intro = React.lazy(() => import('./views/info/Intro'));
+const Training = React.lazy(() => import('./views/info/Training'));
+const Free = React.lazy(() => import('./views/info/Free'));
 
 const Seocho = React.lazy(() => import('./views/camps/Seocho'));
 const Haeundae = React.lazy(() => import('./views/camps/Haeundae'));
@@ -36,10 +37,10 @@ const Seogwipo = React.lazy(() => import('./views/camps/Seogwipo'));
 const routes = [
   { path: '/', exact: true, name: 'Home', component: Home },
   { path: '/home', name: 'Home', component: Home },
-  { path: '/test', exact: true, name: 'TestPage', component: Test },
-  { path: '/test/Intro', name: 'Intro', component: Intro },
-  { path: '/test/Training', name: 'Training', component: Training },
-
+  { path: '/info', exact: true, name: 'TestPage', component: Test },
+  { path: '/info/Intro', name: 'Intro', component: Intro },
+  { path: '/info/Training', name: 'Training', component: Training },
+  { path: '/info/Free', name: 'Free', component: Free },
 
   { path: '/camps/Seocho', name: 'Seocho', component: Seocho },
   { path: '/camps/Haeundae', name: 'Haeundae', component: Haeundae },

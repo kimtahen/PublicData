@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Jeju = () => {
   return (
@@ -20,7 +21,7 @@ const Jeju = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              제주시예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>제주시예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -44,7 +45,7 @@ const Jeju = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              제주시예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>제주시예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -62,7 +63,7 @@ const Jeju = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -78,6 +79,8 @@ const Jeju = () => {
       </CRow>
 
       <Map loc={`제주특별자치도 제주시 종천길 60`} />
+
+      <Rating target={'board12'} />
 
       <Board target={`board12`} name="제주시예비군훈련장게시판" />
 

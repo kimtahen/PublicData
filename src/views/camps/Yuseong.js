@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Yuseong = () => {
   return (
@@ -20,7 +21,7 @@ const Yuseong = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              대전유성구예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>대전유성구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -44,7 +45,7 @@ const Yuseong = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              대전유성구예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>대전유성구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -61,7 +62,7 @@ const Yuseong = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -77,6 +78,8 @@ const Yuseong = () => {
       </CRow>
 
       <Map loc={`대전광역시 유성구 하기로143번길 84`} />
+
+      <Rating target={'board24'} />
 
       <Board target={`board24`} name="대전유성구예비군훈련장게시판" />
 

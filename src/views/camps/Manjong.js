@@ -15,6 +15,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Manjong = () => {
   return (
@@ -23,7 +24,7 @@ const Manjong = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              강원도만종예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>강원도만종예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CEmbed>
@@ -36,7 +37,7 @@ const Manjong = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              강원도만종예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>강원도만종예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -63,6 +64,7 @@ const Manjong = () => {
           <CCard>
             <CCardHeader>
               강원도만종예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>대구북구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -79,7 +81,7 @@ const Manjong = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
 
             </CCardHeader>
             <CCardBody>
@@ -95,6 +97,8 @@ const Manjong = () => {
       </CRow>
 
       <Map loc={`강원도 원주시 상만종길 81-6`} />
+
+      <Rating target={'board14'} />
 
       <Board target={`board14`} name="강원도만종예비군훈련장게시판" />
 

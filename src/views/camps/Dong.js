@@ -12,6 +12,7 @@ import CIcon from '@coreui/icons-react'
 import { DocsLink } from 'src/reusable'
 import Board from '../../api/Board'
 import Map from '../../api/Map';
+import Rating from '../../api/Rating';
 
 const Dong = () => {
   return (
@@ -20,7 +21,7 @@ const Dong = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              대구동구예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>대구동구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CLink
@@ -45,7 +46,7 @@ const Dong = () => {
         <CCol xl="6">
           <CCard>
             <CCardHeader>
-              대구동구예비군훈련장
+              <h1 style={{ marginBottom: 0, }}>대구동구예비군훈련장</h1>
             </CCardHeader>
             <CCardBody>
               <CImg
@@ -63,7 +64,7 @@ const Dong = () => {
         <CCol>
           <CCard>
             <CCardHeader>
-              정보
+              <h1 style={{ marginBottom: 0, }}>정보</h1>
             </CCardHeader>
             <CCardBody>
               <p className="muted">
@@ -78,6 +79,8 @@ const Dong = () => {
       </CRow>
 
       <Map loc={`대구광역시 동구 팔공로 1421`} />
+
+      <Rating target={'board3'} />
 
       <Board target={`board3`} name="대구동구예비군훈련장게시판" />
 
