@@ -22,7 +22,8 @@ const Intro = () => {
                 <CCol xl="6">
                     <CCard>
                         <CCardHeader>
-                            예비군 복무는 이렇게합니다.
+                            <h1 style={{ marginBottom: 0, }}>예비군 복무는 이렇게합니다.</h1>
+
                         </CCardHeader>
                         <CCardBody>
                             <CEmbed>
@@ -35,7 +36,8 @@ const Intro = () => {
                 <CCol xl="6">
                     <CCard>
                         <CCardHeader>
-                            [예비군 창설 50주년 특집 다큐] 어제의 용사 미래의 전사가 되다
+                            <h1 style={{ marginBottom: 0, }}>[예비군 창설 50주년 특집 다큐] 어제의 용사 미래의 전사가 되다</h1>
+
                         </CCardHeader>
                         <CCardBody>
                             <CEmbed>
@@ -52,7 +54,8 @@ const Intro = () => {
                 <CCol xl="6">
                     <CCard>
                         <CCardHeader>
-                            예비군법
+                            <h1 style={{ marginBottom: 0, }}>예비군법</h1>
+
                         </CCardHeader>
                         <CCardBody>
                             <CLink
@@ -69,7 +72,8 @@ const Intro = () => {
                 <CCol xl="6">
                     <CCard>
                         <CCardHeader>
-                            예비군이 꼭 알아야 할 사항
+                            <h1 style={{ marginBottom: 0, }}>예비군이 꼭 알아야 할 사항</h1>
+
                         </CCardHeader>
                         <CCardBody>
                             <CLink
@@ -88,7 +92,8 @@ const Intro = () => {
                 <CCol xl="6">
                     <CCard>
                         <CCardHeader>
-                            예비군 교육훈련시간
+                            <h1 style={{ marginBottom: 0, }}>예비군 교육훈련시간</h1>
+
                         </CCardHeader>
                         <CCardBody>
                             <CLink

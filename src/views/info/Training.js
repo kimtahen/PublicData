@@ -21,7 +21,8 @@ const Training = () => {
                 <CCol xl="6">
                     <CCard>
                         <CCardHeader>
-                            신병교육훈련 현장 /사/격/훈/련/
+                            <h1 style={{ marginBottom: 0, }}>신병교육훈련 현장 /사/격/훈/련/</h1>
+
                         </CCardHeader>
                         <CCardBody>
                             <CEmbed>
@@ -34,7 +35,8 @@ const Training = () => {
                 <CCol xl="6">
                     <CCard>
                         <CCardHeader>
-                            신병교육훈련 현장 /화/생/방/훈/련/
+                            <h1 style={{ marginBottom: 0, }}>신병교육훈련 현장 /화/생/방/훈/련/</h1>
+
                         </CCardHeader>
                         <CCardBody>
                             <CEmbed>
@@ -49,7 +51,8 @@ const Training = () => {
                 <CCol xl="6">
                     <CCard>
                         <CCardHeader>
-                            신병교육훈련 현장 /수/류/탄/투/척/훈/련/
+                            <h1 style={{ marginBottom: 0, }}>신병교육훈련 현장 /수/류/탄/투/척/훈/련/</h1>
+
                         </CCardHeader>
                         <CCardBody>
                             <CEmbed>
