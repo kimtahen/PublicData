@@ -94,39 +94,40 @@ const Rating = ({ target }) => {
 
 	return (
 		<>
-			<CModal show={modal} color={colorPicker(ratingData.rating/ratingData.vote)} onClose={() => { setModal(!modal) }}>
-				<CModalHeader closeButton>
-					Rate!
-				</CModalHeader>
-				<CModalBody className='text-center'>
-					<CButtonGroup>
-						<CButton color="secondary" size="lg" onClick={() => { submitRating(1) }}>1</CButton>
-						<CButton color="secondary" size="lg" onClick={() => { submitRating(2) }}>2</CButton>
-						<CButton color="secondary" size="lg" onClick={() => { submitRating(3) }}>3</CButton>
-						<CButton color="secondary" size="lg" onClick={() => { submitRating(4) }}>4</CButton>
-						<CButton color="secondary" size="lg" onClick={() => { submitRating(5) }}>5</CButton>
-					</CButtonGroup>
-				</CModalBody>
-				<CModalFooter>
-				</CModalFooter>
-			</CModal>
-			<CRow>
-				<CCol>
-					<CCard color="white">
-						<CCardHeader>
-							<h1 style={{ marginBottom: 0, }}>평점</h1>
-						</CCardHeader>
-						<CCardBody>
-							<div style={{ visibility: 'hidden', transition: '3s' }} ref={visRef}>
-								<CWidgetProgress color={colorPicker(ratingData.rating/ratingData.vote)} inverse value={(ratingData.rating/ratingData.vote)*20} header={`${(ratingData.rating / ratingData.vote).toFixed(2)} points`} footer={`${ratingData.vote} people voted`} style={{ margin: 0, height: '100%' }} />
-							</div>
-						</CCardBody>
-						<CCardFooter className="text-center">
-							<CButton color="secondary" size="sm" onClick={() => { setModal(true) }}>rate!</CButton>
-						</CCardFooter>
-					</CCard>
-				</CCol>
-			</CRow>
+		<CModal show={modal} color={colorPicker(ratingData.rating/ratingData.vote)} onClose={()=>{setModal(!modal)}}>
+			<CModalHeader closeButton>
+				RATE!
+			</CModalHeader>
+			<CModalBody className='text-center'>
+				<CButtonGroup>
+					<CButton color="secondary" size="lg" onClick={()=>{submitRating(1)}}>1</CButton>
+					<CButton color="secondary" size="lg" onClick={()=>{submitRating(2)}}>2</CButton>
+					<CButton color="secondary" size="lg" onClick={()=>{submitRating(3)}}>3</CButton>
+					<CButton color="secondary" size="lg" onClick={()=>{submitRating(4)}}>4</CButton>
+					<CButton color="secondary" size="lg" onClick={()=>{submitRating(5)}}>5</CButton>
+				</CButtonGroup>
+			</CModalBody>
+			<CModalFooter>
+			</CModalFooter>
+		</CModal>
+		<CRow>
+			<CCol>
+				<CCard color="white">
+					<CCardHeader>
+						<h1 style={{marginBottom: 0,}}>Rating</h1>
+					</CCardHeader>
+					<CCardBody> 
+					<div style={{visibility: 'hidden', transition: '3s'}} ref={visRef}>
+					<CWidgetProgress color={colorPicker(ratingData.rating/ratingData.vote)} inverse  value={(ratingData.rating/ratingData.vote)*20} header={`${(ratingData.rating/ratingData.vote).toFixed(2)} points`} footer={`${ratingData.vote} people voted`} style={{margin: 0,height: '100%'}}/>
+					</div>
+					</CCardBody>
+					<CCardFooter className="text-center">
+						<CButton color="secondary" size="sm" onClick={()=>{setModal(true)}}>rate!</CButton>
+					</CCardFooter>
+				</CCard>
+			</CCol>
+		</CRow>
+>>>>>>> board
 		</>
 	)
 }
