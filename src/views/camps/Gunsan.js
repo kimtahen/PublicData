@@ -77,7 +77,7 @@ const Gunsan = () => {
         </CCol>
       </CRow>
 
-      <Map loc={`전라북도 군산시 광월길 89`} />
+      <Map loc={`전라북도 군산시 광월길`} />
 
       <Rating target={'board6'} />
 

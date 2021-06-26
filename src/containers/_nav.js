@@ -22,7 +22,7 @@ import JeollaSouth from '../customicon/JeollaSouth.svg'
 const _nav = [
   {
     _tag: 'CSidebarNavItem',
-    name: 'Home',
+    name: '홈',
     to: '/',
     icon: <CIcon name="cilHome" customClasses="c-sidebar-nav-icon" />,
   },

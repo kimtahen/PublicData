@@ -76,7 +76,7 @@ const Michuhol = () => {
         </CCol>
       </CRow>
 
-      <Map loc={`인천광역시 미추홀구 주승로 152`} />
+      <Map loc={`인천광역시 미추홀구 주승로 151`} />
 
       <Rating target={'board15'} />
 

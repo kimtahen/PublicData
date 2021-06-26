@@ -76,7 +76,7 @@ const Jin = () => {
         </CCol>
       </CRow>
 
-      <Map loc={`부산광역시 부산진구 백양대로320번길 99`} />
+      <Map loc={`부산광역시 부산진구 백양대로320번길 96`} />
 
       <Rating target={'board13'} />
 

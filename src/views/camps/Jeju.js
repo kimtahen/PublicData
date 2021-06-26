@@ -78,7 +78,7 @@ const Jeju = () => {
         </CCol>
       </CRow>
 
-      <Map loc={`제주특별자치도 제주시 종천길 60`} />
+      <Map loc={`제주특별자치도 제주시 종천길 61`} />
 
       <Rating target={'board12'} />
 

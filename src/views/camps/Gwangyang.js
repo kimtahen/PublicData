@@ -77,7 +77,7 @@ const Gwangyang = () => {
         </CCol>
       </CRow>
 
-      <Map loc={`전라남도 광양시 조양길 47-20`} />
+      <Map loc={`전라남도 광양시 조양길 47`} />
 
       <Rating target={'board8'} />
 

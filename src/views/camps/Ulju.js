@@ -77,7 +77,7 @@ const Ulju = () => {
         </CCol>
       </CRow>
 
-      <Map loc={`울산 울주군 언양읍 반천리 곰재길 229길`} />
+      <Map loc={`울산 울주군 언양읍 반천리 곰재길`} />
 
       <Rating target={'board22'} />
 

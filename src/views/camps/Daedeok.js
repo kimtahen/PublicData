@@ -78,7 +78,7 @@ const Daedeok = () => {
         </CCol>
       </CRow>
 
-      <Map loc={`대전광역시 대덕구 장동로 111`} />
+      <Map loc={`대전광역시 대덕구 장동로`} />
 
       <Rating target={'board2'} />
 

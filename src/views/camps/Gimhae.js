@@ -77,7 +77,7 @@ const Gimhae = () => {
         </CCol>
       </CRow>
 
-      <Map loc={`경상남도 김해시 나전로 산220-3`} />
+      <Map loc={`경상남도 김해시 나전로`} />
 
       <Rating target={'board25'} />
 
