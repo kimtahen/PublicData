@@ -127,7 +127,6 @@ const Rating = ({ target }) => {
 				</CCard>
 			</CCol>
 		</CRow>
->>>>>>> board
 		</>
 	)
 }

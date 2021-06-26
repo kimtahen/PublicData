@@ -1,12 +1,10 @@
 import React from 'react';
 const Home = React.lazy(() => import('./views/dashboard/Dashboard'));
-const Test = React.lazy(() => import('./views/info/Test'));
 const Intro = React.lazy(() => import('./views/info/Intro'));
 const Training = React.lazy(() => import('./views/info/Training'));
 const Free = React.lazy(() => import('./views/info/Free'));
 
 const Seocho = React.lazy(() => import('./views/camps/Seocho'));
-const Haeundae = React.lazy(() => import('./views/camps/Haeundae'));
 const Jin = React.lazy(() => import('./views/camps/Jin'));
 const Dong = React.lazy(() => import('./views/camps/Dong'));
 const Buk = React.lazy(() => import('./views/camps/Buk'));
@@ -33,17 +31,16 @@ const Gyeongsan = React.lazy(() => import('./views/camps/Gyeongsan'));
 const Pohang = React.lazy(() => import('./views/camps/Pohang'));
 const Jeju = React.lazy(() => import('./views/camps/Jeju'));
 const Seogwipo = React.lazy(() => import('./views/camps/Seogwipo'));
+const Gimhae = React.lazy(()=> import('./views/camps/Gimhae'));
 
 const routes = [
   { path: '/', exact: true, name: 'Home', component: Home },
   { path: '/home', name: 'Home', component: Home },
-  { path: '/info', exact: true, name: 'TestPage', component: Test },
   { path: '/info/Intro', name: 'Intro', component: Intro },
   { path: '/info/Training', name: 'Training', component: Training },
   { path: '/info/Free', name: 'Free', component: Free },
 
   { path: '/camps/Seocho', name: 'Seocho', component: Seocho },
-  { path: '/camps/Haeundae', name: 'Haeundae', component: Haeundae },
   { path: '/camps/Jin', name: 'Jin', component: Jin },
   { path: '/camps/Dong', name: 'Dong', component: Dong },
   { path: '/camps/Buk', name: 'Buk', component: Buk },
@@ -69,7 +66,8 @@ const routes = [
   { path: '/camps/Gyeongsan', name: 'Gyeongsan', component: Gyeongsan },
   { path: '/camps/Pohang', name: 'Pohang', component: Pohang },
   { path: '/camps/Jeju', name: 'Jeju', component: Jeju },
-  { path: '/camps/Seogwipo', name: 'Seogwipo', component: Seogwipo }
+  { path: '/camps/Seogwipo', name: 'Seogwipo', component: Seogwipo },
+  { path: '/camps/Gimhae', name: 'Gimhae', component: Gimhae }
 
 
 ];

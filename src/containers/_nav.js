@@ -22,12 +22,6 @@ import JeollaSouth from '../customicon/JeollaSouth.svg'
 const _nav = [
   {
     _tag: 'CSidebarNavItem',
-    name: 'Test',
-    to: '/info',
-    icon: <img src={Seoul} width="20" height="20" style={{ marginRight: "20px" }} />
-  },
-  {
-    _tag: 'CSidebarNavItem',
     name: 'Home',
     to: '/',
     icon: <CIcon name="cilHome" customClasses="c-sidebar-nav-icon" />,
@@ -79,11 +73,6 @@ const _nav = [
     route: '/Busan',
     icon: <img src={Busan} width="20" height="20" style={{ marginRight: "20px" }} />,
     _children: [
-      {
-        _tag: 'CSidebarNavItem',
-        name: '부산 해운대구 예비군훈련장',
-        to: '/camps/Haeundae',
-      },
       {
         _tag: 'CSidebarNavItem',
         name: '부산 부산진구 예비군훈련장',
