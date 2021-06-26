@@ -33,12 +33,15 @@ const Dashboard = () => {
           <CJumbotron className="border">
             <h1 className="display-3">어제의 용사들에 <br /> 오신 걸 환영합니다!</h1>
 
-            <p className="lead">어제의 용사는 여러분이 예비군에 관한 정보를 얻고, 자유롭게 의견을 나눌 수 있는 공간입니다.</p>
+            <p className="lead">어제의 용사들은 여러분이 예비군에 관한 정보를 얻고, 자유롭게 의견을 나눌 수 있는 공간입니다.</p>
             <hr className="my-2" />
             <p>지금 바로 예비군 훈련장을 둘러보세요!</p>
-            <p className="lead">
+            {/* <p className="lead">
               <CButton color="primary" size="lg">Learn More</CButton>
-            </p>
+            </p> */}
+            <CButton color="primary" size="lg" href="#/info/Intro" role="button">
+              Learn More
+            </CButton>
           </CJumbotron>
         </CCol>
       </CRow>
