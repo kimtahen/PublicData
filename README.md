@@ -102,10 +102,11 @@ firebase 게시판 board27까지 사용하시면 됩니다.
 마무리 작업(영상찍기, 계획서 마무리 등) 진행하고 제출 
 
 
+국방공공데이터경지대회 어제의용사들 모바일
+https://www.youtube.com/watch?v=ftmciZNpsqA
 
-
-
-
+국방공공데이터경진대회 어제의용사들 PC환경
+https://www.youtube.com/watch?v=URlqD7AXB1g
 
 
 
