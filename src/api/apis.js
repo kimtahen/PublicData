@@ -27,16 +27,19 @@ export const fetchData = async (board)=>{
 export const writeData = async ({board,data})=>{
 
 	let nextId;
-	let commonData;
+	let rating;
+	let vote;
 	await db.collection('common').doc(board).get().then((doc)=>{
 		nextId = parseInt(doc.data().volume);
-		commonData = doc.data();
+		rating = parseInt(doc.data().rating);
+		vote = parseInt(doc.data().vote);
 	})
 
 
 	await db.collection('common').doc(board)
 		.set({
-			...commonData,
+			rating,
+			vote,
 			volume: nextId+1
 		})
 	await db.collection(board).doc(`${nextId}`)
