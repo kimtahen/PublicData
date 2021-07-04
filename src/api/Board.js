@@ -293,7 +293,6 @@ return (
 		<CDataTable
               items={boardData}
               fields={fields}
-              columnFilter
               itemsPerPage={10}
               pagination
               hover
