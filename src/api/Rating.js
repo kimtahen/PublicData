@@ -88,7 +88,6 @@ const Rating = ({ target }) => {
 	//modal 
 	const [modal, setModal] = useState(false);
 	const submitRating = async (point) => {
-		console.log(point)
 		write(point);
 	}
 

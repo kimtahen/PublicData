@@ -62,8 +62,7 @@ export const fetchRating = async (board)=>{
 	let rating;
 	let vote;
 	await db.collection('common').doc(board).get().then((doc)=>{
-
-		rating = parseFloat(doc.data().rating);
+		rating = parseInt(doc.data().rating);
 		vote = parseInt(doc.data().vote);
 
 	})
@@ -72,14 +71,19 @@ export const fetchRating = async (board)=>{
 export const writeRating = async ({board, rating}) =>{
 	let data;
 	await db.collection('common').doc(board).get().then((doc)=>{
-		data = doc.data();
+		data = {
+			rating : parseInt(doc.data().rating),
+			vote : parseInt(doc.data().vote),
+		}
 	})
-	if(parseFloat(data.rating) === 0){
-		data.rating = rating
+
+	if(isNaN(data.rating)|| data.rating === 0 || isNaN(data.vote) || data.vote === 0){
+		data.rating = rating;
+		data.vote = 1;
 	}else {
 		data.rating = data.rating + rating
+		data.vote = data.vote +1
 	}
-	data.vote = data.vote +1
 	
 	await db.collection('common').doc(board)
 		.set({
